@@ -11,4 +11,4 @@
 
 ## JAVA 기본
 
-- [210514 JAVA 스레드(Thread)](https://github.com/swanstoz/TIL/tree/master/JAVA/exception)
+- [210514 JAVA 스레드(Thread)](https://github.com/swanstoz/TIL/blob/master/JAVA/exception/210513.md)
