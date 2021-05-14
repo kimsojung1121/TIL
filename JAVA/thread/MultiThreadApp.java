@@ -31,6 +31,19 @@ public class MultiThreadApp {
 		new MultiThreadOne().start(); 
 		//하나의 Thread 인스턴스는 하나의 스레드만 생성 가능
 		new MultiThreadOne().start(); 
+		
+		
+		/*
+		//Runnable 인터페이스를 상속받은 자식 클래스로 인스턴스 생성
+		MultiThreadTwo multiThreadTwo=new MultiThreadTwo();
+		//Thread 클래스로 인스턴스 생성
+		// => Runnable 인스턴스를 전달받아 Thread 인스턴스를 생성하는 생성자 호출
+		// => run() 메소드가 오버라이드 선언되는 것과 같은 효과
+		Thread thread=new Thread(multiThreadTwo);
+		//Thread 인스턴스로 start() 메소드를 호출 - 새로운 스레드를 생성하여 run() 명령 실행
+		thread.start();
+		*/
+		new Thread(new MultiThreadTwo()).start();
 
 		/*
 		//소문자 A부터 Z까지 출력
