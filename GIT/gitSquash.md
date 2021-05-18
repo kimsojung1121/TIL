@@ -1,7 +1,8 @@
 ## 커밋 합치기
  github 8일차,  
  이상하게 내 잔디밭이 너무 초록색이다! .md 파일을 계속 수정한 게 log에 남아서라는 걸 깨달았다... 그럼 그렇지... 커밋 기록엔 온통 Update뿐.  
- [블로그](https://madplay.github.io/post/squash-git-commits-with-rebase)를 참고하여 커밋 합치는 법을 알아보았다.
+ [블로그](https://madplay.github.io/post/squash-git-commits-with-rebase)를 참고하여 커밋 합치는 법을 알아보았다.  
+ 내일부터는 제대로 커밋 메시지를 관리하자!
 
 ```
 $ git log
@@ -29,11 +30,10 @@ vi 편집기 모드에 관한 내용은 [블로그](https://blockdmask.tistory.c
 
 ```
 pick cf37e3e Update README.md
-pick cf37e3e Update README.md
-s pick 86e8dca Update 210517.md
-s pick a6a50ac Update 210517.md
+s 86e8dca Update 210517.md
+s a6a50ac Update 210517.md
 ```
-> 합쳐질 커밋 해시값 앞에 `squash`(약어로는 `s`)를 붙여주고 `:wq`로 저장하며 종료  
+> 입력모드에서 합쳐질 커밋 해시값 앞에 `squash`(약어로는 `s`)를 붙여주고 명령모드에서 `:wq`로 저장하며 종료  
 > 기존의 작업에 대한 커밋 메시지 지우고 하나로 통일하여 메시지 작성
 
 ```
