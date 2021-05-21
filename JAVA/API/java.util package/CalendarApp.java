@@ -2,25 +2,25 @@ package xyz.itwill.util;
 
 import java.util.Calendar;
 
-//java.util.Calendar : ³¯Â¥¿Í ½Ã°£Á¤º¸¸¦ ÀúÀåÇÏ±â À§ÇÑ Å¬·¡½º 
+//java.util.Calendar : ë‚ ì§œì™€ ì‹œê°„ì •ë³´ë¥¼ ì €ì¥í•˜ê¸° ìœ„í•œ í´ë˜ìŠ¤ 
 public class CalendarApp {
 	public static void main(String[] args) {
-		//Calendar.getInstance() : ½Ã½ºÅÛÀÇ ÇöÀç ³¯Â¥¿Í ½Ã°£Á¤º¸¸¦ ÀúÀåÇÑ Calendar 
-		//ÀÎ½ºÅÏ½º¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
+		//Calendar.getInstance() : ì‹œìŠ¤í…œì˜ í˜„ì¬ ë‚ ì§œì™€ ì‹œê°„ì •ë³´ë¥¼ ì €ì¥í•œ Calendar 
+		//ì¸ìŠ¤í„´ìŠ¤ë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
 		Calendar now=Calendar.getInstance();
 		
-		//Calendar.toString() : Calendar ÀÎ½ºÅÏ½º¿¡ ÀúÀåµÈ ³¯Â¥¿Í ½Ã°£Á¤º¸¸¦ ¹®ÀÚ¿­·Î 
-		//º¯È¯ÇÏ¿© ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
+		//Calendar.toString() : Calendar ì¸ìŠ¤í„´ìŠ¤ì— ì €ì¥ëœ ë‚ ì§œì™€ ì‹œê°„ì •ë³´ë¥¼ ë¬¸ìì—´ë¡œ 
+		//ë³€í™˜í•˜ì—¬ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
 		//System.out.println("now.toString() = "+now.toString());
 		System.out.println("now = "+now);
 		
-		String[] day={"ÀÏ","¿ù","È­","¼ö","¸ñ","±İ","Åä"};
-		//Calendar.get(int field) : Calendar ÀÎ½ºÅÏ½º¿¡ ÀúÀåµÈ Á¤º¸ Áß »ó¼ö¸¦ Àü´ŞÇÏ¿©
-		//¿øÇÏ´Â °ªÀ» ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
-		String printDate=now.get(Calendar.YEAR)+"³â "+(now.get(Calendar.MONTH)+1)+"¿ù "
-			+now.get(Calendar.DATE)+"ÀÏ "+day[now.get(Calendar.DAY_OF_WEEK)-1]+"¿äÀÏ";
+		String[] day={"ì¼","ì›”","í™”","ìˆ˜","ëª©","ê¸ˆ","í† "};
+		//Calendar.get(int field) : Calendar ì¸ìŠ¤í„´ìŠ¤ì— ì €ì¥ëœ ì •ë³´ ì¤‘ ìƒìˆ˜ë¥¼ ì „ë‹¬í•˜ì—¬
+		//ì›í•˜ëŠ” ê°’ì„ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
+		String printDate=now.get(Calendar.YEAR)+"ë…„ "+(now.get(Calendar.MONTH)+1)+"ì›” " //MONTHëŠ” 0~11ê¹Œì§€ ì¡´ì¬ => +1
+			+now.get(Calendar.DATE)+"ì¼ "+day[now.get(Calendar.DAY_OF_WEEK)-1]+"ìš”ì¼"; //DAY_OF_WEEKëŠ” 1~7ê¹Œì§€ ì¡´ì¬ //ë°°ì—´ ì¸ë±ìŠ¤ëŠ” 0ë¶€í„° ì‹œì‘í•˜ë¯€ë¡œ -1
 		
-		System.out.println("ÇöÀç = "+printDate);
+		System.out.println("í˜„ì¬ = "+printDate);
 	}
 }
 
