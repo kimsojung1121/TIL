@@ -17,7 +17,7 @@
   - [210521 / JAVA API](https://github.com/swanstoz/TIL/blob/master/JAVA/API/210521.md)
   - [210517 / JAVA API-java.lang package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/java.lang%20package/210517.md)
     - Wrapper 클래스, String 클래스, StringBuffer 클래스
-  - [210518 / JAVA API-java.util package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/java.util%20package/210518.md)
+  - [210518 / JAVA API-java.util package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/java.util%20package/doc/210518.md)
     - Date 클래스, Calendar 클래스
     - 자료구조 클래스(Collection 인터페이스 : Set 인터페이스, List 인터페이스, Queue 인터페이스)와 제네릭(Generic)
   - [210520 / JAVA API-java.util package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/java.util%20package/210520.md)
