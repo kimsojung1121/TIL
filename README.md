@@ -9,7 +9,7 @@
 > 
 ---
 
-## 학원
+## JAVA
 - JAVA 기본
   - [210515 / JAVA 시작하기](https://github.com/swanstoz/TIL/blob/master/JAVA/base/210515.md)
   - [210513 / JAVA 예외처리(Exception)](https://github.com/swanstoz/TIL/blob/master/JAVA/exception/210513.md)
@@ -26,6 +26,7 @@
     - 정규표현식
   - [210521 / JAVA API-java.awt package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/java.awt%20package/210521.md)
     - GUI 프로그램 - 디자인
+  - [210522 / 제네릭(Generic)을 쓰는 이유](https://github.com/swanstoz/TIL/blob/master/JAVA/generic.md)
 ---
 ## GIT
 - [210514 / Git Commit Message 바꾸기](https://github.com/swanstoz/TIL/blob/master/GIT/changeCommitMessage.md)
