@@ -6,7 +6,7 @@ import java.awt.Frame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-//java.awt.event 패키지에 선언되 클래스 또는 인터페이스를 상속받아 이벤트 처리 클래스 작성
+//java.awt.event 패키지에 선언된 클래스 또는 인터페이스를 상속받아 이벤트 처리 클래스 작성
 // => java.awt.event : 이벤트와 이벤트 처리 관련 자료형이 선언된 패키지
 
 //이벤트 프로그램 작성 방법
