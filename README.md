@@ -21,7 +21,7 @@
     - Random 클래스
     - Date 클래스, Calendar 클래스
     - 자료구조 클래스(Collection 인터페이스)와 제네릭(Generic)
-  - [210520 / JAVA API-java.util package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/java.util%20package/210520.md)
+  - [210520 / JAVA API-java.util package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/java.util%20package/doc/210520.md)
     - 자료구조 클래스(Map 인터페이스)
     - 정규표현식
   - [210521 / JAVA API-java.awt package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/GUI/java.awt%20package/210521.md)
