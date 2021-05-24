@@ -24,12 +24,12 @@
   - [210520 / JAVA API-java.util package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/java.util%20package/210520.md)
     - 자료구조 클래스(Map 인터페이스)
     - 정규표현식
-  - [210521 / JAVA API-java.awt package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/java.awt%20package/210521.md)
+  - [210521 / JAVA API-java.awt package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/GUI/java.awt%20package/210521.md)
     - GUI 프로그램 - 디자인
   - [210522 / 제네릭(Generic)을 쓰는 이유](https://github.com/swanstoz/TIL/blob/master/JAVA/generic.md)
-  - [210523 / JAVA API-java.awt.event package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/java.awt%20package/java.awt.event%20package/210523.md)
+  - [210523 / JAVA API-java.awt.event package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/GUI/java.awt.event%20package/doc/210523.md)
     - GUI 프로그램 - 이벤트 처리
-    - Inner 클래스
+  - [210524 / JAVA API-java.awt.event package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/GUI/java.awt.event%20package/doc/210524.md)
 ---
 ## GIT
 - [210514 / Git Commit Message 바꾸기](https://github.com/swanstoz/TIL/blob/master/GIT/changeCommitMessage.md)
