@@ -18,10 +18,10 @@ import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-//ActionEvent°¡ ¹ß»ıµÇ´Â °æ¿ì
-//1. Button ÄÄÆÛ³ÍÆ®¸¦ ´©¸¥ °æ¿ì
-//2. MenuItem ÄÄÆÛ³ÍÆ®¸¦ ¼±ÅÃÇÑ °æ¿ì
-//3. TextFeild ÄÄÆÛ³ÍÆ®¿¡¼­ ¿£ÅÍ¸¦ ÀÔ·ÂÇÑ °æ¿ì
+//ActionEventê°€ ë°œìƒë˜ëŠ” ê²½ìš°
+//1. Button ì»´í¼ë„ŒíŠ¸ë¥¼ ëˆ„ë¥¸ ê²½ìš°
+//2. MenuItem ì»´í¼ë„ŒíŠ¸ë¥¼ ì„ íƒí•œ ê²½ìš°
+//3. TextFeild ì»´í¼ë„ŒíŠ¸ì—ì„œ ì—”í„°ë¥¼ ì…ë ¥í•œ ê²½ìš°
 
 public class EventSourceGetApp extends Frame {
 	/**
@@ -39,21 +39,21 @@ public class EventSourceGetApp extends Frame {
 		super(title);
 		
 		
-		//MenuBar ¸¸µé±â
+		//MenuBar ë§Œë“¤ê¸°
 		MenuBar bar=new MenuBar();
-		Menu menu=new Menu("ÆÄÀÏ");
-		init=new MenuItem("È­¸é ÃÊ±âÈ­", new MenuShortcut(KeyEvent.VK_I));
-		exit=new MenuItem("ÇÁ·Î±×·¥ Á¾·á", new MenuShortcut(KeyEvent.VK_E));
+		Menu menu=new Menu("íŒŒì¼");
+		init=new MenuItem("í™”ë©´ ì´ˆê¸°í™”", new MenuShortcut(KeyEvent.VK_I));
+		exit=new MenuItem("í”„ë¡œê·¸ë¨ ì¢…ë£Œ", new MenuShortcut(KeyEvent.VK_E));
 		menu.add(init);
 		menu.addSeparator();
 		menu.add(exit);
 		bar.add(menu);
 		setMenuBar(bar);
 		
-		red=new Button("»¡°£»ö");
-		green=new Button("ÃÊ·Ï»ö");
-		blue=new Button("ÆÄ¶õ»ö");
-		black=new Button("°ËÁ¤»ö");
+		red=new Button("ë¹¨ê°„ìƒ‰");
+		green=new Button("ì´ˆë¡ìƒ‰");
+		blue=new Button("íŒŒë€ìƒ‰");
+		black=new Button("ê²€ì •ìƒ‰");
 		
 		Panel panel=new Panel();
 		panel.add(red);
@@ -78,8 +78,8 @@ public class EventSourceGetApp extends Frame {
 		area.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 16));
 		field.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 16));
 		
-/* Menu, Button, TextField¸¦ ³ª´²¼­ ÀÛ¼ºÇÏ´Â °ÍÀÌ ÁÁÁö¸¸ ½Ç½ÀÀ» À§ÇØ
- * ÇÏ³ªÀÇ Å¬·¡½º¿¡¼­ Ã³¸®ÇÑ´Ù
+/* Menu, Button, TextFieldë¥¼ ë‚˜ëˆ ì„œ ì‘ì„±í•˜ëŠ” ê²ƒì´ ì¢‹ì§€ë§Œ ì‹¤ìŠµì„ ìœ„í•´
+ * í•˜ë‚˜ì˜ í´ë˜ìŠ¤ì—ì„œ ì²˜ë¦¬í•œë‹¤
  */
 		init.addActionListener(new ActionEventHandler());
 		exit.addActionListener(new ActionEventHandler());
@@ -106,21 +106,21 @@ public class EventSourceGetApp extends Frame {
 		new EventSourceGetApp("EventSource");
 	}
 	
-	//¸ğµç ÄÄÆÛ³ÍÆ®¿¡¼­ ¹ß»ıµÈ ActionEvent¸¦ Ã³¸®ÇÏ±â À§ÇÑ ÀÌº¥Æ® ÇÚµé·¯ Å¬·¡½º
+	//ëª¨ë“  ì»´í¼ë„ŒíŠ¸ì—ì„œ ë°œìƒëœ ActionEventë¥¼ ì²˜ë¦¬í•˜ê¸° ìœ„í•œ ì´ë²¤íŠ¸ í•¸ë“¤ëŸ¬ í´ë˜ìŠ¤
 	public class ActionEventHandler implements ActionListener {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
-			//EventObject.getSource() = ÀÌº¥Æ®°¡ ¹ß»ıµÈ ÄÄÆÛ³ÍÆ®¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
-			// => ÀÌº¥Æ® ¼Ò½º¸¦ Object Å¸ÀÔÀ¸·Î ¹İÈ¯
+			//EventObject.getSource() = ì´ë²¤íŠ¸ê°€ ë°œìƒëœ ì»´í¼ë„ŒíŠ¸ë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
+			// => ì´ë²¤íŠ¸ ì†ŒìŠ¤ë¥¼ Object íƒ€ì…ìœ¼ë¡œ ë°˜í™˜
 			Object eventSource=e.getSource();
 			
-			//ÀÌº¥Æ®°¡ ¹ß»ıµÈ ÄÄÆÛ³ÍÆ® Å¬·¡½º·Î ±¸ºĞÇÏ¿© Ã³¸®
+			//ì´ë²¤íŠ¸ê°€ ë°œìƒëœ ì»´í¼ë„ŒíŠ¸ í´ë˜ìŠ¤ë¡œ êµ¬ë¶„í•˜ì—¬ ì²˜ë¦¬
 			if(eventSource instanceof MenuItem) {
-				//ÀÌº¥Æ® ¼Ò½º¸¦ ÄÄÆÛ³ÍÆ® ÀÎ½ºÅÏ½º·Î ±¸ºĞÇÏ¿© Ã³¸®
+				//ì´ë²¤íŠ¸ ì†ŒìŠ¤ë¥¼ ì»´í¼ë„ŒíŠ¸ ì¸ìŠ¤í„´ìŠ¤ë¡œ êµ¬ë¶„í•˜ì—¬ ì²˜ë¦¬
 				if(eventSource==init) {
-					//Component.setText(String text) : ÄÄÆÛ³ÍÆ®ÀÇ ¹®ÀÚ¿­À» º¯°æÇÏ´Â ¸Ş¼Òµå
-					area.setText(""); //ÄÄÆÛ³ÍÆ®ÀÇ ÅØ½ºÆ® ÃÊ±âÈ­
+					//Component.setText(String text) : ì»´í¼ë„ŒíŠ¸ì˜ ë¬¸ìì—´ì„ ë³€ê²½í•˜ëŠ” ë©”ì†Œë“œ
+					area.setText(""); //ì»´í¼ë„ŒíŠ¸ì˜ í…ìŠ¤íŠ¸ ì´ˆê¸°í™”
 				} else if(eventSource==exit) {
 					System.exit(0);
 				}
@@ -130,28 +130,33 @@ public class EventSourceGetApp extends Frame {
 				blue.setEnabled(true);
 				black.setEnabled(true);
 				
+				//ëª…ì‹œì  ê°ì²´ í˜•ë³€í™˜ì„ ì´ìš©í•˜ì—¬ Object íƒ€ì…ì„ Button íƒ€ì…ìœ¼ë¡œ í˜•ë³€í™˜
+				// => Button í´ë˜ìŠ¤ì˜ ë©”ì†Œë“œ í˜¸ì¶œ
+				((Button)eventSource).setEnabled(false);
+				
+				
 				if(eventSource==red) {
-					red.setEnabled(false);
+					//red.setEnabled(false);
 					area.setForeground(Color.RED);
 				} else if(eventSource==green) {
-					green.setEnabled(false);
+					//green.setEnabled(false);
 					area.setForeground(Color.GREEN);
 				} else if(eventSource==blue) {
-					blue.setEnabled(false);
+					//blue.setEnabled(false);
 					area.setForeground(Color.BLUE);
 				} else if(eventSource==black) {
-					black.setEnabled(false);
+					//black.setEnabled(false);
 					area.setForeground(Color.BLACK);
 				}
 			} else if(eventSource instanceof TextField) {
-				//Component.getText() : ÄÄÆÛ³ÍÆ®ÀÇ ¹®ÀÚ¿­À» ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
-				// => TextField ÄÄÆÛ³ÍÆ®¿¡¼­´Â Å°º¸µå·Î ÀÔ·ÂÇÑ ¹®ÀÚ¿­À» ¹İÈ¯
+				//Component.getText() : ì»´í¼ë„ŒíŠ¸ì˜ ë¬¸ìì—´ì„ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
+				// => TextField ì»´í¼ë„ŒíŠ¸ì—ì„œëŠ” í‚¤ë³´ë“œë¡œ ì…ë ¥í•œ ë¬¸ìì—´ì„ ë°˜í™˜
 				String text=field.getText();
 				
-				if(!text.equals("")) {//¹İÈ¯¹ŞÀº ¹®ÀÚ¿­ÀÌ ÀÖ´Â °æ¿ì
-					//TextArea.append(String s) : Àü´Ş¹ŞÀº ¹®ÀÚ¿­À» TextArea ÄÄÆÛ³ÍÆ®¿¡
-					//Ãß°¡ÇÏ¿© Ãâ·ÂÇÏ´Â ¸Ş¼Òµå
-					area.append("[È«±æµ¿]"+text+"\n");
+				if(!text.equals("")) {//ë°˜í™˜ë°›ì€ ë¬¸ìì—´ì´ ìˆëŠ” ê²½ìš°
+					//TextArea.append(String s) : ì „ë‹¬ë°›ì€ ë¬¸ìì—´ì„ TextArea ì»´í¼ë„ŒíŠ¸ì—
+					//ì¶”ê°€í•˜ì—¬ ì¶œë ¥í•˜ëŠ” ë©”ì†Œë“œ
+					area.append("[í™ê¸¸ë™]"+text+"\n");
 					field.setText("");
 				}
 			}
