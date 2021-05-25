@@ -20,9 +20,9 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.KeyStroke;
 
-//javax.swing ÆĞÅ°ÁöÀÇ ÄÄÆÛ³ÍÆ® ¶Ç´Â ÄÁÅ×ÀÌ³Ê Å¬·¡½º´Â J·Î ½ÃÀÛ 
-//ÇÁ·¹ÀÓÀÇ [´İ±â] ¹öÆ°À» ´©¸¥ °æ¿ì µ¿ÀÛµÇ´Â Á¾·á ¿É¼Ç Á¦°ø
-//ÇÁ·¹ÀÓÀÇ ÄÁÅ×ÀÌ³Ê¸¦ Á¦°ø¹Ş¾Æ µğÀÚÀÎ Ã³¸® - ÄÄÆÛ³ÍÆ® ¹èÄ¡, ¹èÄ¡ °ü¸®ÀÚ º¯°æ, ¹è°æ»ö º¯°æ
+//javax.swing íŒ¨í‚¤ì§€ì˜ ì»´í¼ë„ŒíŠ¸ ë˜ëŠ” ì»¨í…Œì´ë„ˆ í´ë˜ìŠ¤ëŠ” Jë¡œ ì‹œì‘ 
+//í”„ë ˆì„ì˜ [ë‹«ê¸°] ë²„íŠ¼ì„ ëˆ„ë¥¸ ê²½ìš° ë™ì‘ë˜ëŠ” ì¢…ë£Œ ì˜µì…˜ ì œê³µ
+//í”„ë ˆì„ì˜ ì»¨í…Œì´ë„ˆë¥¼ ì œê³µë°›ì•„ ë””ìì¸ ì²˜ë¦¬ - ì»´í¼ë„ŒíŠ¸ ë°°ì¹˜, ë°°ì¹˜ ê´€ë¦¬ì ë³€ê²½, ë°°ê²½ìƒ‰ ë³€ê²½
 public class SwingApp extends JFrame {
 	private static final long serialVersionUID = 1L;
 
@@ -35,17 +35,17 @@ public class SwingApp extends JFrame {
 		super(title);
 		
 		JMenuBar bar=new JMenuBar();
-		JMenu menu=new JMenu("ÆÄÀÏ(F)");
-		//AbstractButton.setMnemonic(char mnemonic) : ¸Ş´º¸¦ Å°º¸µå·Î ¼±ÅÃµÇµµ·Ï º¯°æÇÏ´Â ¸Ş¼Òµå
-		// => [Alt]+[¹®ÀÚ]·Î ¸Ş´º ¼±ÅÃ : ¶óº§¸í¿¡ ¹®ÀÚ°¡ Á¸ÀçÇÒ °æ¿ì _ Ç¥½Ã
+		JMenu menu=new JMenu("íŒŒì¼(F)");
+		//AbstractButton.setMnemonic(char mnemonic) : ë©”ë‰´ë¥¼ í‚¤ë³´ë“œë¡œ ì„ íƒë˜ë„ë¡ ë³€ê²½í•˜ëŠ” ë©”ì†Œë“œ
+		// => [Alt]+[ë¬¸ì]ë¡œ ë©”ë‰´ ì„ íƒ : ë¼ë²¨ëª…ì— ë¬¸ìê°€ ì¡´ì¬í•  ê²½ìš° _ í‘œì‹œ
 		menu.setMnemonic('F');
-		//JMenuItem ÄÄÆÛ³ÍÆ®´Â Mnemonic ±â´ÉÀ» »ı¼ºÀÚ·Î Á¦°ø °¡´É
-		init=new JMenuItem("È­¸é ÃÊ±âÈ­(I)",'I');
-		exit=new JMenuItem("ÇÁ·Î±×·¥ Á¾·á(E)",'E');
-		//JMenuItem.setAccelerator(KeyStroke keyStroke) : JMenuItem ÄÄÆÛ³ÍÆ®ÀÇ ´ÜÃàÅ°¸¦ º¯°æÇÏ´Â ¸Ş¼Òµå
-		//KeyStroke : ±â´ÉÅ°¿Í ¹®ÀÚ¸¦ ÀúÀåÇÏ±â À§ÇÑ Å¬·¡½º
-		//KeyStroke.getKeyStroke(int keyCode, int modifiers) : ±â´ÉÅ°¿Í ¹®ÀÚ°¡ ÀúÀåµÈ
-		//KeyStroke ÀÎ½ºÅÏ½º¸¦ »ı¼ºÇÏ¿© ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
+		//JMenuItem ì»´í¼ë„ŒíŠ¸ëŠ” Mnemonic ê¸°ëŠ¥ì„ ìƒì„±ìë¡œ ì œê³µ ê°€ëŠ¥
+		init=new JMenuItem("í™”ë©´ ì´ˆê¸°í™”(I)",'I');
+		exit=new JMenuItem("í”„ë¡œê·¸ë¨ ì¢…ë£Œ(E)",'E');
+		//JMenuItem.setAccelerator(KeyStroke keyStroke) : JMenuItem ì»´í¼ë„ŒíŠ¸ì˜ ë‹¨ì¶•í‚¤ë¥¼ ë³€ê²½í•˜ëŠ” ë©”ì†Œë“œ
+		//KeyStroke : ê¸°ëŠ¥í‚¤ì™€ ë¬¸ìë¥¼ ì €ì¥í•˜ê¸° ìœ„í•œ í´ë˜ìŠ¤
+		//KeyStroke.getKeyStroke(int keyCode, int modifiers) : ê¸°ëŠ¥í‚¤ì™€ ë¬¸ìê°€ ì €ì¥ëœ
+		//KeyStroke ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•˜ì—¬ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
 		init.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_I
 				, InputEvent.CTRL_DOWN_MASK+InputEvent.SHIFT_DOWN_MASK));
 		exit.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_E
@@ -56,10 +56,10 @@ public class SwingApp extends JFrame {
 		bar.add(menu);
 		setJMenuBar(bar);
 		
-		red=new JButton("»¡°£»ö");
-		green=new JButton("ÃÊ·Ï»ö");
-		blue=new JButton("ÆÄ¶õ»ö");
-		black=new JButton("°ËÁ¤»ö");
+		red=new JButton("ë¹¨ê°„ìƒ‰");
+		green=new JButton("ì´ˆë¡ìƒ‰");
+		blue=new JButton("íŒŒë€ìƒ‰");
+		black=new JButton("ê²€ì •ìƒ‰");
 		
 		JPanel panel=new JPanel();
 		panel.add(red);
@@ -68,12 +68,12 @@ public class SwingApp extends JFrame {
 		panel.add(black);
 		
 		area=new JTextArea();
-		//JTextArea ÄÄÆÛ³ÍÆ®ÀÇ ½ºÅ©·Ñ ¹ß»ıÀ» À§ÇØ JScrollPane ÄÁÅ×ÀÌ³Ê¿¡ ¹èÄ¡
+		//JTextArea ì»´í¼ë„ŒíŠ¸ì˜ ìŠ¤í¬ë¡¤ ë°œìƒì„ ìœ„í•´ JScrollPane ì»¨í…Œì´ë„ˆì— ë°°ì¹˜
 		JScrollPane pane=new JScrollPane(area);
 		field=new JTextField();
 		
-		//JFrame.getContentPane() : ÇÁ·¹ÀÓÀÇ Container ÀÎ½ºÅÏ½º¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼Òµå
-		// => ÇÁ·¹ÀÓ¿¡ Á÷Á¢ µğÀÚÀÎÇÏÁö ¾Ê°í ÇÁ·¹ÀÓÀÇ ÄÁÅ×ÀÌ³Ê¸¦ ÀÌ¿ëÇÏ¿© µğÀÚÀÎ Ã³¸®
+		//JFrame.getContentPane() : í”„ë ˆì„ì˜ Container ì¸ìŠ¤í„´ìŠ¤ë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì†Œë“œ
+		// => í”„ë ˆì„ì— ì§ì ‘ ë””ìì¸í•˜ì§€ ì•Šê³  í”„ë ˆì„ì˜ ì»¨í…Œì´ë„ˆë¥¼ ì´ìš©í•˜ì—¬ ë””ìì¸ ì²˜ë¦¬
 		Container container=getContentPane();
 		
 		container.add(panel, BorderLayout.NORTH);
@@ -86,13 +86,13 @@ public class SwingApp extends JFrame {
 		red.setForeground(Color.RED);
 		green.setForeground(Color.GREEN);
 		blue.setForeground(Color.BLUE);
-		red.setFont(new Font("±¼¸²", Font.BOLD, 14));
-		green.setFont(new Font("±¼¸²", Font.BOLD, 14));
-		blue.setFont(new Font("±¼¸²", Font.BOLD, 14));
-		area.setFont(new Font("±¼¸²", Font.BOLD, 16));
-		field.setFont(new Font("±¼Ã¼", Font.BOLD, 16));
+		red.setFont(new Font("êµ´ë¦¼", Font.BOLD, 14));
+		green.setFont(new Font("êµ´ë¦¼", Font.BOLD, 14));
+		blue.setFont(new Font("êµ´ë¦¼", Font.BOLD, 14));
+		area.setFont(new Font("êµ´ë¦¼", Font.BOLD, 16));
+		field.setFont(new Font("êµ´ì²´", Font.BOLD, 16));
 		
-		//ÀÌº¥Æ® ÇÚµé·¯ µî·Ï
+		//ì´ë²¤íŠ¸ í•¸ë“¤ëŸ¬ ë“±ë¡
 		init.addActionListener(new ActionEventHandler());
 		exit.addActionListener(new ActionEventHandler());
 		red.addActionListener(new ActionEventHandler());
@@ -101,13 +101,13 @@ public class SwingApp extends JFrame {
 		black.addActionListener(new ActionEventHandler());
 		field.addActionListener(new ActionEventHandler());
 		
-		//JFrame.setDefaultCloseOperation(int operation) : ÇÁ·¹ÀÓÀÇ [´İ±â] ¹öÆ°À» ´©¸¥ °æ¿ì
-		//µ¿ÀÛµÇ´Â ±â´É¿¡ ´ëÇÑ Á¾·á ¿É¼ÇÀ» º¯°æÇÏ´Â ¸Ş¼Òµå
-		//[´İ±â] ¹öÆ°À» ´©¸¥ °æ¿ì µ¿ÀÛµÇ´Â ±â´É¿¡ ´ëÇÑ Á¾·á ¿É¼Ç - »ó¼ö »ç¿ë
-		// => WindowConstants.DO_NOTHING_ON_CLOSE : ¾Æ¹«·± µ¿ÀÛµµ ¹ß»ıµÇÁö ¾Êµµ·Ï ¼³Á¤
-		// => WindowConstants.HIDE_ON_CLOSE : ÇÁ·¹ÀÓÀ» ¼û±âµµ·Ï ¼³Á¤(±âº»)
-		// => WindowConstants.DISPOSE_ON_CLOSE : ¸Ş¸ğ¸® Á¤¸® ÈÄ ÇÁ·Î±×·¥ÀÌ Á¾·áµÇµµ·Ï ¼³Á¤
-		// => WindowConstants.EXIT_ON_CLOSE : ¹«Á¶°Ç ÇÁ·Î±×·¥ÀÌ Á¾·áµÇµµ·Ï ¼³Á¤
+		//JFrame.setDefaultCloseOperation(int operation) : í”„ë ˆì„ì˜ [ë‹«ê¸°] ë²„íŠ¼ì„ ëˆ„ë¥¸ ê²½ìš°
+		//ë™ì‘ë˜ëŠ” ê¸°ëŠ¥ì— ëŒ€í•œ ì¢…ë£Œ ì˜µì…˜ì„ ë³€ê²½í•˜ëŠ” ë©”ì†Œë“œ
+		//[ë‹«ê¸°] ë²„íŠ¼ì„ ëˆ„ë¥¸ ê²½ìš° ë™ì‘ë˜ëŠ” ê¸°ëŠ¥ì— ëŒ€í•œ ì¢…ë£Œ ì˜µì…˜ - ìƒìˆ˜ ì‚¬ìš©
+		// => WindowConstants.DO_NOTHING_ON_CLOSE : ì•„ë¬´ëŸ° ë™ì‘ë„ ë°œìƒë˜ì§€ ì•Šë„ë¡ ì„¤ì •
+		// => WindowConstants.HIDE_ON_CLOSE : í”„ë ˆì„ì„ ìˆ¨ê¸°ë„ë¡ ì„¤ì •(ê¸°ë³¸)
+		// => WindowConstants.DISPOSE_ON_CLOSE : ë©”ëª¨ë¦¬ ì •ë¦¬ í›„ í”„ë¡œê·¸ë¨ì´ ì¢…ë£Œë˜ë„ë¡ ì„¤ì •
+		// => WindowConstants.EXIT_ON_CLOSE : ë¬´ì¡°ê±´ í”„ë¡œê·¸ë¨ì´ ì¢…ë£Œë˜ë„ë¡ ì„¤ì •
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
 		setBounds(800, 200, 400, 500);
@@ -135,24 +135,26 @@ public class SwingApp extends JFrame {
 				blue.setEnabled(true);
 				black.setEnabled(true);
 				
+				((JButton)eventSource).setEnabled(false);
+				
 				if(eventSource==red) {
-					red.setEnabled(false);
+					//red.setEnabled(false);
 					area.setForeground(Color.RED);
 				} else if(eventSource==green) {
-					green.setEnabled(false);
+					//green.setEnabled(false);
 					area.setForeground(Color.GREEN);
 				} else if(eventSource==blue) {
-					blue.setEnabled(false);
+					//blue.setEnabled(false);
 					area.setForeground(Color.BLUE);
 				} else if(eventSource==black) {
-					black.setEnabled(false);
+					//black.setEnabled(false);
 					area.setForeground(Color.BLACK);
 				}
 			} else if(eventSource instanceof JTextField) {
 				String text=field.getText();
 				
 				if(!text.equals("")) {
-					area.append("[È«±æµ¿]"+text+"\n");
+					area.append("[í™ê¸¸ë™]"+text+"\n");
 					field.setText("");
 				}
 			}
