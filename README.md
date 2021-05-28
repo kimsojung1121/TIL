@@ -31,7 +31,9 @@
     - GUI 프로그램 - 이벤트 처리
   - [210524 / JAVA API-java.awt.event package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/GUI/java.awt.event%20package/doc/210524.md)
   - [210526 / JAVA API-javax.swing](https://github.com/swanstoz/TIL/blob/master/JAVA/API/GUI/javax.swing%20package/210526.md)
-  - [210527 / JAVA API-java.io](https://github.com/swanstoz/TIL/blob/master/JAVA/API/java.io%20package/210527.md)
+  - [210527 / JAVA API-java.io](https://github.com/swanstoz/TIL/blob/master/JAVA/API/java.io%20package/doc/210527.md)
+  - [210528 / JAVA API-java.io](https://github.com/swanstoz/TIL/blob/master/JAVA/API/java.io%20package/doc/210528.md)
+    - 회원정보 입출력 프로그램, 메모장 프로그램
 ---
 ## GIT
 - [210514 / Git Commit Message 바꾸기](https://github.com/swanstoz/TIL/blob/master/GIT/changeCommitMessage.md)
