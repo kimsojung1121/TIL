@@ -38,3 +38,7 @@
 ## GIT
 - [210514 / Git Commit Message 바꾸기](https://github.com/swanstoz/TIL/blob/master/GIT/changeCommitMessage.md)
 - [210518 / Git Commit 합치기 - squash](https://github.com/swanstoz/TIL/blob/master/GIT/gitSquash.md)
+
+---
+## PYTHON
+- [210530 ~ / Python-base-nadocoding](https://github.com/swanstoz/Python-base-nadocoding)
