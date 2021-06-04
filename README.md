@@ -47,11 +47,13 @@
 ---
 
 ## DATABASE
+- [210604 / Database 소개](https://github.com/swanstoz/TIL/blob/master/Database/01.Database.md)
+
 - SQL
-  - [210602 / SQL Developer 1일차](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/1%EC%9D%BC%EC%B0%A8.sql)
-  - [210603 / SQL Developer 2일차](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/2%EC%9D%BC%EC%B0%A8.sql)
+  - [210602 / SQL Developer 1일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/1%EC%9D%BC%EC%B0%A8.sql)
+  - [210603 / SQL Developer 2일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/2%EC%9D%BC%EC%B0%A8.sql)
     - 단일함수와 그룹함수 
-  - [210603 / SQL Developer 3일차](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/3%EC%9D%BC%EC%B0%A8.sql)
+  - [210603 / SQL Developer 3일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/3%EC%9D%BC%EC%B0%A8.sql)
     - 분석함수와 JOIN
 
 ---
