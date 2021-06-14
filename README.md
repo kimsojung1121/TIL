@@ -57,6 +57,9 @@
   - [210604 / SQL Developer 3일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/3%EC%9D%BC%EC%B0%A8.sql)
     - 분석함수와 JOIN
   - [210607 / SQL Developer 4일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/4%EC%9D%BC%EC%B0%A8.sql)
+  - [210608 / SQL Developer 5일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/5%EC%9D%BC%EC%B0%A8.sql)
+  - [210609 / SQL Developer 6일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/6%EC%9D%BC%EC%B0%A8.sql)
+  - [210610 / SQL Developer 7일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/7%EC%9D%BC%EC%B0%A8.sql)
 
 ---
 ## PYTHON
