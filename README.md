@@ -60,7 +60,15 @@
   - [210608 / SQL Developer 5일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/5%EC%9D%BC%EC%B0%A8.sql)
   - [210609 / SQL Developer 6일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/6%EC%9D%BC%EC%B0%A8.sql)
   - [210610 / SQL Developer 7일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/7%EC%9D%BC%EC%B0%A8.sql)
+  - [210611 / SQL Developer 8일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/8%EC%9D%BC%EC%B0%A8.sql)
+  - [210614 / SQL Developer 9일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/9%EC%9D%BC%EC%B0%A8.sql)
 
 ---
+
+## JDBC
+- [210615 / JDBC 프로그램 작성법](https://github.com/swanstoz/TIL/blob/master/JDBC/doc/210615.md)
+
+---
+
 ## PYTHON
 - [210530 ~ / Python-base-nadocoding](https://github.com/swanstoz/Python-base-nadocoding)
