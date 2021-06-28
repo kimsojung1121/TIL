@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS</title>
+<style type="text/css">
+div {
+	margin: 15px;
+	width: 500px;
+	border: 1px solid red;
+}
+
+/* direction : 문장 쓰기 방향에 대한 스타일 속성 */
+/* 속성값 : ltr(왼쪽 > 오른쪽 : 기본), rtl(오른쪽 > 왼쪽) */
+.dir1 { direction: ltr; }
+.dir2 { direction: rtl; }
+
+.order { width: 150px; }
+
+/* text-align : 문장 정렬에 대한 스타일 속성 */
+/* 속성값 : left(기본), right, center, justify(양쪽) */
+.order1 { text-align: left; }
+.order2 { text-align: right; }
+.order3 { text-align: center; }
+.order4 { text-align: justify; }
+
+/* text-shadow : 문장의 그림자 관련 스타일 속성 */
+/* => 속성값 : 가로 세로 범짐 색상 */
+.shadow { 
+	font-size: 30px;
+	font-weight: bold;
+	color: gray;
+	text-shadow: 3px 3px 3px #000;	
+}
+
+.overflow {
+	width: 200px;
+	/* 태그내용이 박스모델의 폭을 벗어날 경우 자동 줄바꿈 없이 그래로 처리   */
+	white-space: nowrap;
+}
+
+/* overflow : 박스모델을 벗어난 문장의 처리 관련 스타일 속성 */
+/* => 속성값 : visiable(기본), hidden - 숨김 처리, scroll - 스크롤 처리 */
+.overflow1 { overflow: hidden; }
+
+/* text-overflow : 숨겨진 문장 처리 관련 스타일 속성 */
+/* => 속성값 : clip(기본) - 잘라내기, ellopsis - [...] 기호로 표현 */
+.overflow2 { 
+	overflow: hidden;
+	text-overflow: ellipsis; 
+}
+
+/* text-decoration : 문장의 라인(선) 관련 스타일 속성 */
+/* => 속성값 : none(기본), underline, line-through, overline */
+.deco1 { text-decoration: underline; }
+.deco2 { text-decoration: line-through; }
+.deco3 { text-decoration: overline; }
+
+/* text-indent : 문장 앞부분의 여백 관련 스타일 속성 - 들여쓰기 */
+.in1 { text-indent: 20px; }
+.in2 { text-indent: 30px; }
+.in3 { text-indent: 40px; }
+
+/* text-transform : 문장(알파벳)에 대한 변형 관련 스타일 속성 */
+/* => 속성값 : none(기본), uppercase, lowercase, capitalize */
+.trans1 { text-transform: uppercase; }
+.trans2 { text-transform: lowercase; }
+.trans3 { text-transform: capitalize; }
+</style>
+</head>
+<body>
+	<h1>문장(Text) 관련 스타일 속성</h1>
+	<hr>
+	<div class="dir1">브라우저에 출력될 아주 중요한 내용입니다.</div>
+	<div class="dir2">브라우저에 출력될 아주 중요한 내용입니다.</div>
+	<hr>
+	<div class="order order1">브라우저에 출력될 아주 중요한 내용입니다.</div>
+	<div class="order order2">브라우저에 출력될 아주 중요한 내용입니다.</div>
+	<div class="order order3">브라우저에 출력될 아주 중요한 내용입니다.</div>
+	<div class="order order4">브라우저에 출력될 아주 중요한 내용입니다.</div>
+	<hr>
+	<div class="shadow">HTML5와 CSS3</div>
+	<hr>
+	<div class="overflow overflow1">HTML5와 CSS3를 배우고 있습니다.</div>
+	<div class="overflow overflow2">HTML5와 CSS3를 배우고 있습니다.</div>
+	<hr>
+	<div class="deco1">웹프로그램은 Servlet 또는 JSP를 이용하여 작성됩니다.</div>
+	<div class="deco2">웹프로그램은 Servlet 또는 JSP를 이용하여 작성됩니다.</div>
+	<div class="deco3">웹프로그램은 Servlet 또는 JSP를 이용하여 작성됩니다.</div>
+	<hr>
+	<div class="in1">문장 관련 스타일 속성</div>
+	<div class="in2">문장 관련 스타일 속성</div>
+	<div class="in3">문장 관련 스타일 속성</div>
+	<hr>
+	<div class="trans1">html5와 css3</div>	
+	<div class="trans2">HTML5와 CSS3</div>	
+	<div class="trans3">html5와 css3</div>	
+</body>
+</html>
