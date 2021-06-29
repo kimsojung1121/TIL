@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS</title>
+<style type="text/css">
+div {
+	width: 400px;
+	height: 200px;
+	margin: 10px;
+	border: 1px solid black;
+}
+
+#red {
+	background: red;
+	
+	/* position : 박스모델 배치 방법 관련 스타일 속성  */
+	/* 속성값 : static(기본) - 박스모델 자동 배치(박스모델 중첩 미발생) */
+	/* position: static; */
+
+	/* 속성값 : relative - 박스모델 자동 배치 후 좌표값으로 박스모델을 이동하여 배치(박스모델 중첩 발생) */
+	/* => 좌표값은 top 스타일 속성(Y)과 left 스타일 속성(X)을 사용하여 박스모델을 이동 */
+	/*
+	position: relative;
+	top: 50px;
+	left: 30px;
+	*/
+	
+	/* 속성값 : absolute - 좌표값으로 박스모델을 이동하여 배치(박스모델 중첩 발생) */
+	/*
+	position: absolute;
+	top: 200px;
+	left: 100px;
+	*/
+	
+	/* 속성값 : fixed - 좌표값으로 박스모델을 이동하여 배치(박스모델 중첩 발생) */
+	/* => 박스모델이 브라우저를 벗어나도 스크롤 미발생 */
+	position: fixed;
+	top: 200px;
+	left: 100px;
+}
+
+#green {
+	background: green;
+
+	/* position: static; */
+	
+	/*
+	position: relative;
+	top: -20px;
+	left: -10px;
+	*/
+
+	/*
+	position: absolute;
+	top: 250px;
+	left: 700px;
+	*/
+	
+	position: fixed;
+	top: 250px;
+	left: 700px;
+}
+
+#blue {
+	background: blue;
+
+	/* position: static; */
+
+	/*
+	position: relative;
+	top: -200px;
+	left: 100px;
+	*/
+
+	/*
+	position: absolute;
+	top: 300px;
+	left: 400px;
+	*/
+	
+	position: fixed;
+	top: 300px;
+	left: 400px;
+}
+</style>
+</head>
+<body>
+	<h1>박스모델 배치 관련 스타일 속성</h1>
+	<hr>
+	<div id="red"></div>
+	<div id="green"></div>
+	<div id="blue"></div>
+</body>
+</html>
