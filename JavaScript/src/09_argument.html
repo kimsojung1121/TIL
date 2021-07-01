@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript</title>
+</head>
+<body>
+	<h1>함수의 매개변수(Argument)</h1>
+	<hr>
+	<p>함수의 명령 실행에 반드시 필요한 값을 함수 호출시 전달받기 위한 변수</p>
+	
+	<script type="text/javascript">
+	//매개변수는 var 키워드로 변수를 선언하지 않아도 지역변수로 처리
+	function sum(num1, num2) {
+		alert("합계 = "+(num1+num2));
+	}	
+	
+	//함수의 매개변수에 차례대로 값을 전달하여 함수 호출
+	//sum(10,20);
+	
+	//매개변수의 갯수보다 적은 갯수의 값을 전달하여 함수 호출 가능
+	// => 값을 전달받지 못한 매개변수는 [undefined] 자료형으로 표현 - 비정상적인 실행 결과 발생
+	//sum(10);
+	
+	//매개변수의 갯수보다 많은 갯수의 값을 전달하여 함수 호출 가능
+	// => 값을 전달받아 저장할 매개변수가 없는 경우 전달값 사용 불가능
+	//sum(10,20,30);
+	
+	function total() {
+		//alert("total 함수 호출");
+		
+		//함수에는 모든 전달값을 저장하는 arguments 객체(Array 객체 - 배열) 존재 
+		//alert(typeof(arguments));//자료형 : object
+
+		//arguments.length : arguments 객체에 저장된 값의 갯수를 표현하는 속성(Property)
+		// => 배열 요소 갯수
+		//alert(arguments.length);
+		
+		var tot=0;
+		for(var i=0;i<arguments.length;i++) {
+			//arguments[index] : arguments 객체에 저장된 값을 표현하는 방법 - 배열 요소 표현
+			tot+=arguments[i];
+		}
+		
+		alert("합계 = "+tot);
+	}
+	
+	//total();
+	//total(10,20,30);
+	total(10,20,30,40,50);
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

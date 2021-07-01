@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript</title>
+</head>
+<body>
+	<h1>내장함수 - 시간 관련 함수</h1>
+	<hr>
+	<p>setTimeout(callback,ms) : 시간(ms) 경과 후 콜백함수에 작성된 명령을 한번만 실행하는 
+	함수 - timeoutId(setTimeout 호출의 식별자) 반환</p>
+	<p>clearTimeout(timeoutId) : setTimeout 호출 식별자를 전달받아 식별자의 setTimeout 함수 
+	호출을 취소 처리하는 함수</p>
+	
+	<p>setInterval(callback,ms) : 시간(ms)마다 콜백함수에 작성된 명령을 반복적으로 실행하는 
+	함수 - intervalId(setInterval 호출의 식별자) 반환</p>
+	<p>clearInterval(intervalId) : setInterval 호출 식별자를 전달받아 식별자의 setInterval 함수 
+	호출을 취소 처리하는 함수</p>
+	
+	<script type="text/javascript">
+	var intervalId=setInterval(function() { //익명함수
+		alert("시간마다 반복 실행되는 명령");
+	}, 1000); //1초마다 반복
+	
+	setTimeout(function() {
+		clearInterval(intervalId);
+	}, 5000);
+	
+	</script>
+</body>
+</html>

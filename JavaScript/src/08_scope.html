@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript</title>
+</head>
+<body>
+	<h1>전역변수와 지역변수</h1>
+	<hr>
+	<p>전역변수(Global Variable) : 함수 외부에서 선언된 변수
+	- 모든 함수에서 변수 사용 가능</p>
+	<p>지역변수(Local Variable) : 함수 내부에서 선언된 변수
+	- 변수가 선언된 함수에서만 변수 사용 가능</p>
+	
+	<script type="text/javascript">
+	var globalVar=100;//전역변수
+	
+	function display1() {
+		//alert("display1 함수 = "+globalVar);
+		globalVar=200;
+		
+		//var localVar=300;//지역변수 - 선언된 함수가 종료되면 자동 소멸
+		
+		//변수를 선언하지 않고 사용한 경우 전역변수로 처리
+		localVar=300;//전역변수
+		//alert("prdisplay1 함수 = "+localVar);
+	}
+	
+	function display2() {
+		//alert("display2 함수 = "+globalVar);
+		
+		//다른 함수에서 선언된 지역변수 사용 불가능 - 미선언 에러 발생
+		alert("display2 함수 = "+localVar);
+	}
+	
+	display1();
+	display2();
+	</script>
+</body>
+</html>
+
+
+
+
