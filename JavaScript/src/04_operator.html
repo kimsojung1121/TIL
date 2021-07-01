@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript</title>
+</head>
+<body>
+	<h1>자바스크립트 연산자</h1>
+	<hr>
+	<p>최우선 연산자 : () [] {} .</p>
+	<p>단항연산자 : + - ++ -- ! new typeof</p>
+	<p>산술연산자 : * / % + -</p>
+	<p>관계연산자 : &gt; &lt; &gt;= &lt;= == === != !==</p>
+	<p>논리연산자 : &amp;&amp; ||</p>
+	<p>대입연산자 : = *= /= %= += -=</p> 
+	
+	<script type="text/javascript">
+	var num=123;
+	//alert(num);
+	
+	//typeof(대상) : 대상의 자료형을 제공하는 연산자
+	//alert(typeof(num));//자료형 : number
+	
+	num="123";
+	//alert(num);
+	//alert(typeof(num));//자료형 : string
+	
+	//== 또는 != 연산자는 자료형에 상관없이 값만 비교하여 결과(논리값) 제공
+	//alert(num==123);//결과 : 참(true)
+	//alert(num!=123);//결과 : 거짓(false)
+	
+	//=== 또는 !== 연산자는 자료형과 값을 비교하여 결과(논리값) 제공
+	alert(num===123);//결과 : 거짓(false)
+	alert(num!==123);//결과 : 참(true)
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+

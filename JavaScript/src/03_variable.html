@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript</title>
+</head>
+<body>
+	<h1>자바스크립트 변수</h1>
+	<hr>
+	<p>자바스크립트는 변수를 선언하지 않고 사용 가능하지만 var 키워드를 사용하여 변수를
+	선언하여 사용하는 것을 권장</p>
+	<p>형식)var 변수명=초기값</p>
+	<p>변수는 저장값에 따라 자료형이 자동으로 결정</p>
+	
+	<script type="text/javascript">
+	var num;//변수에 저장된 값이 없는 경우 변수의 자료형은 [undefined]로 자동 설정 
+	//alert("num = "+num);//변수값이 없는 경우 "undefined"로 처리
+	
+	num=10;//변수의 자료형 : number
+	//alert("num = "+num);
+	
+	num="10";//변수의 자료형 : string
+	//alert("num = "+num);
+	
+	//동일한 이름의 변수 선언 가능
+	var num=100;
+	//alert("num = "+num);
+	
+	//변수 선언 없이 변수 사용 가능
+	su=200;
+	//alert("su = "+su)
+	
+	//값이 저장되어 있지 않은 미선언된 변수 사용시 에러 발생
+	alert("number = "+number);
+	</script>
+</body>
+</html>
+
+
+
+
+
+
