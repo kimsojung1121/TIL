@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript</title>
+</head>
+<body>
+	<h1>이벤트(Event) - 이벤트 처리(Event Handle)</h1>
+	<hr>
+	<p>태그(Element 객체)에서 발생되는 이벤트는 자바스크립트를 이용하여 이벤트 처리</p>
+	<p>이벤트 처리 방법-1 : HTML 태그의 이벤트 속성(onXXX)의 속성값으로  이벤트를 
+	처리하는 자바스크립트 명령(이벤트 처리 함수 호출)으로 이벤트 처리</p>
+	<p>이벤트 처리 방법-2 : Element 객체의 이벤트 관련 프로퍼티(onXXX)에 이벤트 처리 함수를
+	등록하여 이벤트 발생시 자동 호출되어 이벤트 처리</p>
+	<hr>
+	<!-- 태그의 이벤트 속성의 속성값으로 이벤트 처리 명령 작성 -->
+	<button type="button" onclick="eventHandle();">버튼(1)을 눌러보세요.</button>
+	<button type="button" id="btn">버튼(2)을 눌러보세요.</button> 
+	
+	<script type="text/javascript">
+	function eventHandle() {
+		alert("버튼(1)을 눌렀습니다.");
+	}
+	
+	//Element 객체의 이벤트 관련 프로퍼티에 이벤트 처리 함수를 저장(등록)
+	// => Element 객체에서 해당 이벤트가 발생될 경우 이벤트 처리 함수 자동 호출
+	document.getElementById("btn").onclick=function() {
+		alert("버튼(2)을 눌렀습니다.");
+	}
+	</script>
+</body>
+</html>
+
+
+
+
