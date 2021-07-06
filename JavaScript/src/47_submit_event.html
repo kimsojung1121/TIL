@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript</title>
+</head>
+<body>
+	<h1>Submit Event - 입력 페이지</h1>
+	<hr>
+	<form action="47_submit_action.html" method="post" name="loginForm">
+	<table>
+		<tr>
+			<td>아이디</td>
+			<td><input type="text" name="id"></td>
+		</tr>
+		<tr>
+			<td>비밀번호</td>
+			<td><input type="password" name="password"></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<button type="submit">로그인</button>
+			</td>
+		</tr>
+	</table>
+	</form>
+	
+	<script type="text/javascript">
+	loginForm.id.focus();
+	
+	//FormElement.onsubmit : form 태그에서 submit 이벤트가 발생된 경우 이벤트 처리 함수를
+	//저장(등록)하기 위한 이벤트 속성 - form 태그 동작 전에 실행될 명령 작성 : 입력값 검증
+	loginForm.onsubmit=function() {
+		if(loginForm.id.value=="") {
+			alert("아이디를 입력해 주세요.");
+			loginForm.id.focus();
+			/*
+			event.preventDefault(); //기본 이벤트 제거 - submit 이벤트 취소
+			return; //이벤트 처리 함수 종료
+			*/
+			
+			//이벤트 처리 함수에서 false를 반환하면 기본 이벤트 제거와 이벤트 전달을 중지하는 기능과 동일한 효과 제공
+			return false; //submit 이벤트를 취소하며 이벤트 처리 함수 종료
+		}
+		
+		var idReg=/^[a-zA-Z]\w{5,19}/g;
+		if(!idReg.test(loginForm.id.value)) {
+			alert("아이디를 형식에 맞게 입력해 주세요.\n[영문자 5~19글자]");
+			loginForm.id.focus();
+			return false;
+		}
+		
+	
+		if(loginForm.password.value=="") {
+			alert("비밀번호를 입력해 주세요.");
+			loginForm.password.focus();
+			return false;
+		}
+	}
+	
+	</script>
+</body>
+</html>
