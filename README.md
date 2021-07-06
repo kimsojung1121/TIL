@@ -80,6 +80,7 @@
 ---
 
 ## JavaScript & jQuery
+- [Tern 플러그인 설치](https://github.com/swanstoz/TIL/tree/master/JavaScript/doc)
 - [210630 ~ 210706 / JavaScript 실습](https://github.com/swanstoz/TIL/tree/master/JavaScript/src)
 - [210706 ~ /jQuery 실습](https://github.com/swanstoz/TIL/tree/master/jQuery/src)
 
