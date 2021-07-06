@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery</title>
+<!-- script 태그를 이용하여 jQuery 라이브러리 파일을 웹문서에 포함해야만 jQuery 객체 사용 가능 -->
+<!-- => https://jquery.com 사이트 참조 -->
+<!-- CDN 서버의 jQuery 라이브러리 파일을 제공받아 포함 -->
+<!-- CDN(Contents Delivery Network) : 대용량의 컨텐츠를 빠르고 안정적으로 제공하는 서버 -->
+<!-- => 1.X : IE9 이하, 2.X or 3.X : IE10 이상 - 버전에 따라 라이브러리에서 제공되는 메소드가 다름 -->
+<!-- => 미압축파일(uncompressed) : 라이브러리 변경 가능, 압축파일(minified) : 라이브러리 변경 불가능 -->
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+//jQuery는 CSS 선택자로 엘리먼트(태그)를 검색하여 jQuery 객체 생성 후 메소드를 호출하여 원하는 기능 구현
+// => DOM Tree(document 객체)가 생성된 후 jQery 객체 사용 가능
+//형식)jQuery(Selector|Object|Tag).메소드(값,값,...)
+
+/*
+//window 객체의 onload 이벤트 속성에 이벤트 처리 함수 등록 - DOM Tree 완성
+// => 가독성이 떨어지며, 이벤트 처리 함수가 하나만 등록
+window.onload=function() {
+	alert("window.onload 이벤트에 대한 이벤트 처리 함수의 명령 실행-1");
+}
+
+window.onload=function() {
+	alert("window.onload 이벤트에 대한 이벤트 처리 함수의 명령 실행-2");
+}
+*/
+
+//jQuery(document).ready(callback) : document 객체가 준비된 경우(DOM Tree 완성) callback 
+//함수의 명령을 실행하는 메소드
+// => 가독성이 좋으며 ready() 메소드 여러번 호출 가능
+/*
+jQuery(document).ready(function() {
+	alert("document 객체가 준비되면 실행되는 명령-1");
+});
+
+jQuery(document).ready(function() {
+	alert("document 객체가 준비되면 실행되는 명령-2");
+});
+*/
+
+/*
+//jQuery 함수명 대신 $ 기호를 사용하여 표현 가능
+$(document).ready(function() {
+	$("p").css("color","red");
+});
+*/
+</script>
+</head>
+<body>
+	<h1>jQuery 사용법</h1>
+	<hr>
+	<p>Hello, jQuery</p>
+	<p>Hello, jQuery</p>
+	<p>Hello, jQuery</p>
+	
+	<script type="text/javascript">
+	//script 태그를 body의 마지막 자식태그로 선언하면 document 객체가 준비된 상태이므로
+	//jQuery(document).ready() 메소드를 호출하지 않아도 jQuery 객체 사용 가능
+	$("p").css("color","green");
+	</script>
+</body>
+</html>
