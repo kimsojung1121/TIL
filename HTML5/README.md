@@ -1,5 +1,6 @@
-## Web Application 개발을 위한 프로그램 설치 및 환경설정
+### Web Application 개발을 위한 프로그램 설치 및 환경설정
 
+---
 
 1. Download
     - JDK 설치 및 환경설정
