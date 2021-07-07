@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery</title>
+<style type="text/css">
+#displayDiv {
+	margin: 20px;
+	padding: 10px;
+	border: 1px solid blue;
+	color: red;
+	font-size: 1.5em;
+	text-align: center;
+}
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<h1>css 메소드</h1>
+	<hr>
+	<div id="displayDiv">CSS 스타일 관련 메소드</div>
+	
+	<script type="text/javascript">
+	//$(selector).css(name) : 검색 엘리먼트의 CSS 스타일 속성값을 반환하는 메소드
+	//alert($("#displayDiv").css("margin"));//결과 : 20px
+	//alert($("#displayDiv").css("padding"));//결과 : 10px
+	//alert($("#displayDiv").css("color"));//결과 : rgb(255, 0, 0)
+	//alert($("#displayDiv").css("border"));//결과 : 1px solid rgb(0, 0, 255)
+	//alert($("#displayDiv").css("font-size"));//결과 : 24px
+	//CSS 스타일 속성은 자바스크립트의 카멜 표기법으로 표현 가능  
+	//alert($("#displayDiv").css("fontSize"));
+	//alert($("#displayDiv").css("text-align"));//결과 : center
+	//alert($("#displayDiv").css("textAlign"));
+	
+	/*
+	//$(selector).css(name,value) : 검색 엘리먼트의 CSS 스타일 속성값을 변경하는 메소드
+	$("#displayDiv").css("width","50%");
+	$("#displayDiv").css("position","absolute");
+	$("#displayDiv").css("top","200px");
+	$("#displayDiv").css("left","100px");
+	$("#displayDiv").css("color","green");
+	*/
+	
+	//검색 엘리먼트의 CSS 스타일 속성값을 여러 개 변경할 경우 css() 메소드의 매개변수에
+	//JSON의 Object 객체를 전달하여 객체의 프로퍼티와 값으로 CSS 스타일 속성 변경
+	$("#displayDiv").css({"width":"50%","position":"absolute"
+		,"top":"200px","left":"100px","color":"green"});
+	
+	</script>
+</body>
+</html>
+
+
+
+
+

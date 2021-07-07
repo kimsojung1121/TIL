@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<h1>선택자(Selector)</h1>
+	<hr>
+	<h3>jQuery 연습-1</h3>
+	<h3 class="normal">jQuery 연습-2</h3>
+	<h3 class="normal">jQuery 연습-3</h3>
+	<h3>jQuery 연습-4</h3>
+	<h3>jQuery 연습-5</h3>
+	<h4 class="normal">jQuery 연습-6</h4>
+	<h4>jQuery 연습-7</h4>
+	<hr>
+	<ul>
+		<li>jQuery 연습-1</li>
+		<li>jQuery 연습-2</li>
+		<li>jQuery 연습-3</li>
+		<li>jQuery 연습-4</li>
+		<li>jQuery 연습-5</li>
+	</ul>
+	
+	<script type="text/javascript">
+	$("h3").css("background","yellow");
+	
+	//검색된 엘리먼트 중 특정 엘리먼트를 표현하기 위해 필터 선택자 사용
+	// => 필터 선택자는 클래스 선택자만 사용 가능
+	//$("h3.normal").css("background","green");
+	
+	//$(selector).filter(selector) : 검색된 엘리먼트 중 특정 엘리먼트만 검색하기 위한 메소드
+	// => filter() 메소드는 선택자 생략 불가능  
+	// => filter() 메소드는 모든 선택자를 사용하여 특정 엘리먼트 검색
+	//$("h3").filter(".normal").css("background","green");
+	$(".normal").filter("h3").css("background","green");
+
+	$("h4").filter(".normal").css("background","silver");
+	
+	//$(selector).not(selector) : 검색된 엘리먼트 중 특정 엘리먼트가 아닌 나머지 엘리먼트를 검색하기 위한 메소드
+	// => filter() 메소드는 선택자 생략 불가능  
+	$("h4").not(".normal").css("background","gold");
+	
+	//검색된 엘리먼트 중 원하는 위치의 엘리먼트를 선택하기 위해 가상 선택자 사용 
+	// => :nth-child(X) : X번째 위치한 엘리먼트 표현
+	//$("ul li:nth-child(3)").css("color","red");
+	//$("ul li").filter(":nth-child(3)").css("color","red");
+	//$("ul").find("li").filter(":nth-child(3)").css("color","red");
+	
+	//검색된 엘리먼트 중 원하는 위치의 엘리먼트를 선택하기 위해 가상 선택자 사용 
+	// => :eq(index) : index에 위치한 엘리먼트 표현
+	//$("ul li:eq(2)").css("color","red");
+	//$("ul li").filter(":eq(2)").css("color","red");
+	//$("ul").find("li").filter(":eq(2)").css("color","red");
+	
+	//$(selector).eq(index) : 검색 엘리먼트 중 index 위치의 엘리먼트를 검색하기 위한 메소드
+	$("ul").find("li").eq(2).css("color","red");
+	
+	//ul 태그의 첫번째 li 태그를 선택하여 CSS 스타일 적용
+	//$("ul li").filter(":nth-child(1)").css("color","green");
+	//$("ul li").eq(0).css("color","green");
+	//$("ul li").filter(":first-child").css("color","green");
+	//$(selector).first() : 검색 엘리먼트 중 첫번째 엘리먼트를 검색하기 위한 메소드
+	$("ul li").first().css("color","green");
+	
+	//ul 태그의 마지막 li 태그를 선택하여 CSS 스타일 적용
+	//$("ul li").filter(":nth-child(5)").css("color","blue");
+	//$("ul li").eq(4).css("color","blue");
+	//eq() 메소드의 매개변수에 -1를 전달하면 마지막 엘리먼트 표현
+	//$("ul li").eq(-1).css("color","blue");
+	//$("ul li").filter(":last-child").css("color","blue");
+	//$(selector).last() : 검색 엘리먼트 중 마지막 엘리먼트를 검색하기 위한 메소드
+	$("ul li").last().css("color","blue");
+	
+	//ul 태그의 첫번째의 다음 li 태그를 선택하여 CSS 스타일 적용
+	//$("ul li").filter(":nth-child(2)").css("color","pink");
+	//$("ul li").eq(1).css("color","pink");
+	//$(selector).next() : 검색 엘리먼트의 다음 엘리먼트를 검색하기 위한 메소드
+	$("ul li").first().next().css("color","pink");
+	
+	//ul 태그의 마지막의 이전 li 태그를 선택하여 CSS 스타일 적용
+	//$("ul li").filter(":nth-child(4)").css("color","aqua");
+	//$("ul li").eq(3).css("color","aqua");
+	//$(selector).prev() : 검색 엘리먼트의 이전 엘리먼트를 검색하기 위한 메소드
+	$("ul li").last().prev().css("color","aqua");
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
