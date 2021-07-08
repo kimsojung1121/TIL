@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery</title>
+<style type="text/css">
+#box {
+	width: 150px;
+	height: 150px;
+	background: orange;
+	margin-bottom: 20px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+	<h1>Effect - Animate</h1>
+	<hr>
+	<select id="easing">
+		<option>linear</option>
+		<option>easeInCubic</option>
+		<option>easeOutCubic</option>
+		<option>easeInBack</option>
+		<option>easeOutBack</option>
+		<option>easeInElastic</option>
+		<option>easeOutElastic</option>
+	</select>
+	<hr>
+	<div id="box"></div>
+	<button type="button" id="left">◀</button>
+	<button type="button" id="right">▶</button>
+	
+	<script type="text/javascript">
+	$("#left").attr("disabled","disabled"); //검색 엘리먼트 비활성화
+	
+	$("#left").click(function() {
+		//검색 엘리먼트(option 태그) 중 선택된 엘리먼트의 태그내용을 반환받아 저장
+		var easing=$("#easing").children(":selected").text();
+		
+		$("#left").attr("disabled","disabled"); //검색 엘리먼트 비활성화
+		$("#right").removeAttr("disabled"); //검색 엘리먼트의 태그 속성 제거 - 태그 활성화
+		
+		//$(selector).animate(properties, duration[, easing][, callback]) : 검색 엘리먼트에
+		//애니메이션 기능을 제공하는 메소드
+		// => properties : 엘리먼트의 CSS 스타일 속성과 속성값을 JSON 형식의 Object 객체로 전달
+		// => duration : 애니메이션 효과의 적용시간(ms) 전달
+		// => easing : 애니메이션 효과의 적용 속도 전달(jqueryui 라이브러리 포함) => https://easing.net 사이트 참조
+		// => callback : 애니메이션 효과 적용 후 실행될 명령을 작성하는 함수 전달
+		//$(selector).stop() : 검색 엘리먼트에 적용 중인 애니메이션 효과를 제거하는 메소드
+		$("#box").stop().animate({"left":0}, 3000, easing);
+		
+	});
+	
+	$("#right").click(function() {
+		//검색 엘리먼트(option 태그) 중 선택된 엘리먼트의 태그내용을 반환받아 저장
+		var easing=$("#easing").children(":selected").text();
+		
+		$("#right").attr("disabled","disabled"); //검색 엘리먼트 비활성화
+		$("#left").removeAttr("disabled"); //검색 엘리먼트의 태그 속성 제거 - 태그 활성화
+		
+		$("#box").stop().animate({"left":$(window).width()-170}, 3000, easing);
+		
+	});
+	</script>
+</body>
+</html>

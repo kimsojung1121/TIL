@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery</title>
+<style type="text/css">
+div {
+	width: 200px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	border: 3px solid blue;
+}
+
+a, a:visited {
+	text-decoration: none;
+	padding: 5px 2px;
+	border: 3px solid red;
+}
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<h1>jQuery Event Handle</h1>
+	<hr>
+	<div>
+		<a href="https://www.daum.net">다음</a>
+	</div>
+	
+	<script type="text/javascript">
+	$("div").click(function() {
+		$(this).css("background","aqua");
+		$(this).find("a").css("background","white");
+	});
+	
+	$("div").find("a").click(function() {
+		$(this).css("background","yellow");
+		
+		/*
+		event.preventDefault();//기본 이벤트 제거
+		event.stopPropagation();//이벤트 전달 중지
+		*/
+		
+		//이벤트 처리 함수에서 false를 반환하면 기본 이벤트 제거와 이벤트 전달 중지 기능 구현
+		return false;
+	});
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery</title>
+<style type="text/css">
+img { margin-top: 20px; }
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<h1>Effect - Hide And Show</h1>
+	<hr>
+	<button type="button" id="btn1">Hide And Show</button>
+	<button type="button" id="btn2">SlideUp And SlideDown</button>
+	<button type="button" id="btn3">FadeOut And FadeIn</button>
+	
+	<div id="displayDiv">
+		<img alt="" src="images/Koala.jpg" width="400">
+	</div>
+	
+	<script type="text/javascript">
+	/*
+	$("#btn1").click(function() {
+		//검색 엘리먼트가 CSS 스타일 속성값을 비교하여 속성값을 반대로 변경
+		// => 엘리먼트가 배치되지 않았다면 배치하고, 배치되어 있으면 배치되지 않도록 설정
+		if($("#displayDiv").css("display")=="none") {
+			$("#displayDiv").css("display","block");
+		} else if($("#displayDiv").css("display")=="block") {
+			$("#displayDiv").css("display","none");
+		}
+	});
+	*/
+	
+	$("#btn1").click(function() {
+		/*
+		if($("#displayDiv").css("display")=="none") {
+			//$(selector).show([duration]) : 검색 엘리먼트를 배치하여 보여지도록 설정하는 메소드
+			// => 지속시간(duration : ms)을 설정한 경우 설정된 시간 동안 엘리먼트의 변화 효과를 제공
+			// => 지속시간(duration)이 생략된 경우 기본값으로 0으로 설정
+			//$("#displayDiv").show();
+			$("#displayDiv").show(2000);
+		} else if($("#displayDiv").css("display")=="block") {
+			//$(selector).hide() : 검색 엘리먼트를 미배치하여 숨겨지도록 설정하는 메소드
+			//$("#displayDiv").hide();
+			$("#displayDiv").hide(2000);
+		}
+		*/
+		
+		//$(selector).toggle([duration]) : hide 기능과 show 기능을 반대로 제공하는 메소드
+		$("#displayDiv").toggle();
+	});
+	
+	$("#btn2").click(function() {
+		/*
+		if($("#displayDiv").css("display")=="none") {
+			//$(selector).slideUp([duration]) : 검색 엘리먼트를 배치하여 보여지도록 설정하는 메소드
+			$("#displayDiv").slideDown(2000);
+		} else if($("#displayDiv").css("display")=="block") {
+			//$(selector).slideDown() : 검색 엘리먼트를 미배치하여 숨겨지도록 설정하는 메소드
+			$("#displayDiv").slideUp(2000);
+		}
+		*/
+
+		//$(selector).toggle([duration]) : slideUp 기능과 slideDown 기능을 반대로 제공하는 메소드
+		$("#displayDiv").slideToggle(2000);
+	});
+	
+	$("#btn3").click(function() {	
+		/*
+		if($("#displayDiv").css("display")=="none") {
+			//$(selector).fadeIn([duration]) : 검색 엘리먼트를 배치하여 보여지도록 설정하는 메소드
+			$("#displayDiv").fadeIn(2000);
+		} else if($("#displayDiv").css("display")=="block") {
+			//$(selector).fadeOut() : 검색 엘리먼트를 미배치하여 숨겨지도록 설정하는 메소드
+			$("#displayDiv").fadeOut(2000);
+		}
+		*/
+
+		//$(selector).fadeToggle([duration]) : fadeIn 기능과 fadeOut 기능을 반대로 제공하는 메소드
+		$("#displayDiv").fadeToggle(2000);
+	});
+	</script>
+</body>
+</html>
