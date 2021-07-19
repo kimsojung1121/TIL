@@ -94,7 +94,3 @@
 ## JSP
 - [210716~ /JSP 실습](https://github.com/swanstoz/TIL/tree/master/JSP)
 
----
-
-## PYTHON
-- [210530 ~ / Python-base-nadocoding](https://github.com/swanstoz/Python-base-nadocoding)
