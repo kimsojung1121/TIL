@@ -81,12 +81,12 @@
 
 ## JavaScript & jQuery
 - [Tern 플러그인 설치](https://github.com/swanstoz/TIL/blob/master/JavaScript/doc/PlugIn_tern.md)
-- [210630 ~ 210706 /JavaScript 실습](https://github.com/swanstoz/TIL/tree/master/JavaScript/src)
-- [210706 ~ 210709 /jQuery 실습](https://github.com/swanstoz/TIL/tree/master/jQuery/src)
+- [210630 ~ 210706 / JavaScript 실습](https://github.com/swanstoz/TIL/tree/master/JavaScript/src)
+- [210706 ~ 210709 / jQuery 실습](https://github.com/swanstoz/TIL/tree/master/jQuery/src)
 
 ---
 
 ## Servlet & JSP
-- [210712~210715 /Servlet 실습](https://github.com/swanstoz/TIL/tree/master/Servlet)
-- [210716~ /JSP 실습](https://github.com/swanstoz/TIL/tree/master/JSP)
-- [210716 ~ 210811세미 프로젝트](https://github.com/swanstoz/semi-project/blob/master/README.md)
+- [210712~210715 / Servlet 실습](https://github.com/swanstoz/TIL/tree/master/Servlet)
+- [210716~ / JSP 실습](https://github.com/swanstoz/TIL/tree/master/JSP)
+- [210716 ~ 210811 / 세미 프로젝트](https://github.com/swanstoz/semi-project/blob/master/README.md)
