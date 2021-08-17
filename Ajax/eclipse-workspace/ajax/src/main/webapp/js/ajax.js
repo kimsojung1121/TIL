@@ -1,10 +1,10 @@
 /* AJAX Module : 객체(속성과 메소드)를 이용하여 AJAX 기능 제공 */
 /* => 효율적인 비동기 요청에 대한 응답처리 제공  */
-var site={};
-site.itwill={};
+var xyz={};
+xyz.itwill={};
 
 //생성자 함수
-site.itwill.Ajax=function(method, url, param, callback) {
+xyz.itwill.Ajax=function(method, url, param, callback) {
 	//객체 속성 추가
 	this.method=method;
 	this.url=url;
@@ -13,7 +13,7 @@ site.itwill.Ajax=function(method, url, param, callback) {
 	this.send();//메소드 호출
 }
 
-site.itwill.Ajax.prototype={
+xyz.itwill.Ajax.prototype={
 	//XMLHttpRequest 객체를 생성하여 반환하는 메소드	
 	getXMLHttpRequest:function() {
 		if(window.ActiveXObject) {//IE4 ~ IE6
