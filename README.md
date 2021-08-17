@@ -86,11 +86,7 @@
 
 ---
 
-## Servlet
+## Servlet & JSP
 - [210712~210715 /Servlet 실습](https://github.com/swanstoz/TIL/tree/master/Servlet)
-
----
-
-## JSP
 - [210716~ /JSP 실습](https://github.com/swanstoz/TIL/tree/master/JSP)
 - [세미 프로젝트](https://github.com/swanstoz/semi-project/blob/master/README.md)
