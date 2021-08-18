@@ -74,6 +74,7 @@
 ---
 
 - [Web Application을 위한 환경설정](https://github.com/kimsojung1121/TIL/blob/master/doc/WebApplication.md)
+- [210818 / WAS란?](https://github.com/kimsojung1121/TIL/blob/master/doc/WAS.md)
 
 ## HTML5 & CSS3
 - [210623 ~ 210624 / HTML5 실습](https://github.com/swanstoz/TIL/tree/master/HTML5/src)
