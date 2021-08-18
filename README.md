@@ -92,6 +92,7 @@
 ## Servlet & JSP
 - [210712 ~ 210715 / Servlet 실습](https://github.com/swanstoz/TIL/tree/master/Servlet)
 - [210716 ~ / JSP 실습](https://github.com/swanstoz/TIL/tree/master/JSP)
+  - [210818 / JSP란?](https://github.com/kimsojung1121/TIL/tree/master/JSP/doc)
 - [210716 ~ 210811 / 세미 프로젝트](https://github.com/swanstoz/semi-project/blob/master/README.md)
 
 ---
