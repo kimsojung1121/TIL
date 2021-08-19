@@ -15,7 +15,7 @@ public abstract class JdbcDAO {
 	
 	static {
 		try {
-			dataSource=(DataSource)new InitialContext().lookup("java:comp/env/jdbc/oracle");
+			dataSource=(DataSource)new InitialContext().lookup("java:/comp/env/jdbc/oracle");
 		} catch (NamingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
