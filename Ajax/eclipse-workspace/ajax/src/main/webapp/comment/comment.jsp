@@ -157,8 +157,8 @@ h1 {
 						html+="<b>["+this.writer+"]</b><br>";//댓글 작성자
 						html+=this.content.replace(/\n/g,"<br>")+"<br>";//댓글 내용
 						html+="("+this.writeDate+")<br>";//댓글 작성일
-						html+="<button type='button'>댓글변경</button>&nbsp;";//변경 버튼
-						html+="<button type='button'>댓글삭제</button>";//삭제 버튼
+						html+="<button type='button' onclick='modifyComment("+this.num+");'>댓글변경</button>&nbsp;";//변경 버튼
+						html+="<button type='button' onclick='removeComment("+this.num+");'>댓글삭제</button>";//삭제 버튼
 						html+="</div>";
 						
 						$("#comment_list").append(html);//댓글목록에 댓글을 추가하여 출력
@@ -181,6 +181,7 @@ h1 {
 	// => 입력값을 전달받아 댓글로 저장하는 웹프로그램(comment_add.jsp)을 AJAX 기능으로 
 	//요청하여 응답결과를 제공받아 처리
 	$("#add_btn").click(function() {
+		//입력태그의 입력값을 제공받아 저장
 		var writer=$("#add_writer").val();
 		if(writer=="") {
 			$("#add_message").html("작성자를 입력해 주세요.");
@@ -216,16 +217,134 @@ h1 {
 			}
 		});
 	});
+	
+	//댓글 변경 영역과 댓글 삭제 영역을 초기화 처리하는 함수
+	function init() {
+		$("#modify_writer").val("");
+		$("#modify_content").val("");
+		$("#modify_message").html("&nbsp;");
+		
+		$("#comment_modify").hide().appendTo(document.documentElement);
+		$("#comment_remove").hide().appendTo(document.documentElement);
+	}
+	
+	//댓글의 [댓글변경]을 클릭한 경우 호출되는 이벤트 처리 함수
+	// => 변경하고자 하는 댓글정보를 검색하는 웹프로그램(comment_get.jsp)을 AJAX 기능으로 
+	//요청하여 응답결과를 제공받아 처리
+	function modifyComment(num) {
+		//alert(num);
+		
+		init();
+		
+		//댓글 변경 영역을 보여주고 변경될 댓글의 자식 엘리먼트로 이동 처리
+		$("#comment_modify").show().appendTo("#comment_"+num);
+		
+		$.ajax({
+			type: "get",
+			url: "comment_get.jsp",
+			data: {"num":num},
+			dataType: "xml",
+			success: function(xml) {
+				var code=$(xml).find("code").text();
+				
+				if(code=="success") {
+					var comment=JSON.parse($(xml).find("data").text());
+					$("#modify_writer").val(comment.writer);
+					$("#modify_content").val(comment.content);
+				} else {
+					//댓글 변경 영역을 숨기고 document 객체의 마지막 자식 엘리먼트로 이동 처리
+					//$("#comment_modify").hide().appendTo(document.documentElement);
+					
+					init();
+				}
+			},
+			error: function(xhr) {
+				alert("에러코드 = "+xhr.status);
+			}
+		});
+	}
+	
+	//댓글 변경 영역에서 [변경]을 클릭한 경우 호출될 이벤트 처리 함수 등록
+	// => 댓글번호와 입력태그의 입력값을 전달받아 댓글정보를 변경하는 웹프로그램(comment_modify.jsp)을
+	//AJAX 기능으로 요청하고 응답결과를 제공받아 처리
+	$("#modify_btn").click(function() {
+		//댓글 출력 영역(div 태그)에서 댓글번호(num 속성값)를 제공받아 저장 
+		var num=$("#comment_modify").parent().attr("num");
+		//alert("num = "+num);
+		
+		//입력태그의 입력값을 제공받아 저장
+		var writer=$("#modify_writer").val();
+		if(writer=="") {
+			$("#modify_message").html("작성자를 입력해 주세요.");
+			$("#modify_writer").focus();
+			return;
+		}
+		
+		var content=$("#modify_content").val();
+		if(content=="") {
+			$("#modify_message").html("댓글내용을 입력해 주세요.");
+			$("#modify_content").focus();
+			return;
+		}
+
+		$.ajax({
+			type: "post",
+			url: "comment_modify.jsp",
+			data: {"num":num, "writer":writer, "content":content},
+			dataType: "xml",
+			success: function(xml) {
+				var code=$(xml).find("code").text();
+				
+				if(code=="success") {
+					init();
+					loadComment();
+				}
+			},
+			error: function(xhr) {
+				alert("에러코드 = "+xhr.status);
+			}
+		});
+	});
+	
+	//댓글 변경 영역에서 [취소]을 클릭한 경우 호출될 이벤트 처리 함수 등록
+	$("#modify_cancel_btn").click(init);
+	
+	//댓글의 [댓글삭제]를 클릭한 경우 호출되는 이벤트 처리 함수
+	function removeComment(num) {
+		init();
+
+		//댓글 삭제 영역을 보여주고 삭제될 댓글의 자식 엘리먼트로 이동 처리
+		$("#comment_remove").show().appendTo("#comment_"+num);
+	}
+	
+	//댓글 삭제 영역에서 [삭제]을 클릭한 경우 호출될 이벤트 처리 함수 등록
+	// => 댓글번호를 전달받아 댓글정보를 삭제하는 웹프로그램(comment_remove.jsp)을
+	//AJAX 기능으로 요청하고 응답결과를 제공받아 처리
+	$("#remove_btn").click(function() {
+		var num=$("#comment_remove").parent().attr("num");
+		//alert("num = "+num);
+		
+		$.ajax({
+			type: "get",
+			url: "comment_remove.jsp",
+			data: {"num":num},
+			dataType: "xml",
+			success: function(xml) {
+				var code=$(xml).find("code").text();
+				
+				if(code=="success") {
+					init();
+					loadComment();
+				}
+			},
+			error: function(xhr) {
+				alert("에러코드 = "+xhr.status);
+			}
+		});
+	});
+	
+	//댓글 삭제 영역에서 [취소]을 클릭한 경우 호출될 이벤트 처리 함수 등록
+	$("#remove_cancel_btn").click(init);
 	</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-

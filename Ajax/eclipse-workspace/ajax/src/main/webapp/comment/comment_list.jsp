@@ -8,7 +8,6 @@
 <%-- AJAX_COMMENT 테이블에 저장된 모든 댓글정보를 검색하여 XML 텍스트 데이타를 응답하는 JSP 문서 --%>    
 <%
 	List<AjaxCommentDTO> ajaxCommentList=AjaxCommentDAO.getDAO().selectAjaxCommentList();
-
 %>
 <result>
 	<% if(!ajaxCommentList.isEmpty()) {//검색결과가 있는 경우 %>
