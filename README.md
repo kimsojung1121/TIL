@@ -1,13 +1,14 @@
 # Today I Learned
 #### 오늘 배운 것은 오늘 기록하자! ✍🏻
+> 1. 실습 내용 업로드
+> 2. 잘 모르겠는 개념 정리해서 작성
 #### 학원 (~21/10/4)
 
 
-> #### 참고 교재 
-> 
-> 1. [혼자 공부하는 자바](https://www.hanbit.co.kr/store/books/look.php?p_code=B5635758676)
-> 2. [Do it! 자바스크립트 + 제이쿼리 입문](http://www.easyspub.co.kr/20_Menu/BookView/253/PUB)
-> 3. [처음 해보는 Servlet&JSP 웹 프로그래밍](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9791186710128&orderClick=)
+#### 참고 교재 
+1. [혼자 공부하는 자바](https://www.hanbit.co.kr/store/books/look.php?p_code=B5635758676)
+2. [Do it! 자바스크립트 + 제이쿼리 입문](http://www.easyspub.co.kr/20_Menu/BookView/253/PUB)
+3. [처음 해보는 Servlet&JSP 웹 프로그래밍](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9791186710128&orderClick=)
 
 ---
 
@@ -68,7 +69,7 @@
 
 ## JDBC
 - [210615 / JDBC 프로그램 작성법](https://github.com/swanstoz/TIL/blob/master/JDBC/doc/210615.md)
-- [~ 210622 / JDBC 개인 프로젝트](https://github.com/swanstoz/gui-project/blob/master/README.md)
+- **[~ 210622 / JDBC 개인 프로젝트](https://github.com/swanstoz/gui-project/blob/master/README.md)**
   - 점포별 직원 관리 JDBC 
 
 ---
@@ -93,11 +94,13 @@
 - [210712 ~ 210715 / Servlet 실습](https://github.com/swanstoz/TIL/tree/master/Servlet)
 - [210716 ~ / JSP 실습](https://github.com/swanstoz/TIL/tree/master/JSP)
   - [210818 / JSP란?](https://github.com/kimsojung1121/TIL/blob/master/JSP/doc/jsp.md)
-- [210716 ~ 210811 / 세미 프로젝트](https://github.com/swanstoz/semi-project/blob/master/README.md)
+- **[210716 ~ 210811 / 세미 프로젝트](https://github.com/swanstoz/semi-project/blob/master/README.md)**
+  - I'MO CAKE 쇼핑몰 웹사이트
+- [210820 ~ / MVC 디자인 패턴]()
 
 ---
 
 ## Ajax
-- [210817 ~ / Ajax 실습](https://github.com/kimsojung1121/TIL/tree/master/Ajax/eclipse-workspace/ajax/src/main/webapp)
+- [210817 ~ 210820 / Ajax 실습](https://github.com/kimsojung1121/TIL/tree/master/Ajax/eclipse-workspace/ajax/src/main/webapp)
   - [210818 / Ajax란?](https://github.com/kimsojung1121/TIL/blob/master/Ajax/doc/ajax.md)
   - [210818 / 데이터 전송 형식](https://github.com/kimsojung1121/TIL/blob/master/Ajax/doc/csv_xml_json.md)
