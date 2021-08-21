@@ -8,7 +8,7 @@
 #### 참고 교재 
 1. [혼자 공부하는 자바](https://www.hanbit.co.kr/store/books/look.php?p_code=B5635758676)
 2. [Do it! 자바스크립트 + 제이쿼리 입문](http://www.easyspub.co.kr/20_Menu/BookView/253/PUB)
-3. [처음 해보는 Servlet&JSP 웹 프로그래밍](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9791186710128&orderClick=)
+3. [처음 해보는 Servlet&JSP 웹 프로그래밍](https://github.com/kimsojung1121/TIL/blob/master/Book/Servlet%26JSP.md)
 
 ---
 
