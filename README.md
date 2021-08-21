@@ -8,7 +8,7 @@
 #### 참고 교재 
 1. [혼자 공부하는 자바](https://www.hanbit.co.kr/store/books/look.php?p_code=B5635758676)
 2. [Do it! 자바스크립트 + 제이쿼리 입문](http://www.easyspub.co.kr/20_Menu/BookView/253/PUB)
-3. [처음 해보는 Servlet&JSP 웹 프로그래밍](https://github.com/kimsojung1121/TIL/blob/master/Book/Servlet%26JSP.md)
+3. [처음 해보는 Servlet&JSP 웹 프로그래밍]()
 
 ---
 
@@ -104,3 +104,8 @@
 - [210817 ~ 210820 / Ajax 실습](https://github.com/kimsojung1121/TIL/tree/master/Ajax/eclipse-workspace/ajax/src/main/webapp)
   - [210818 / Ajax란?](https://github.com/kimsojung1121/TIL/blob/master/Ajax/doc/ajax.md)
   - [210818 / 데이터 전송 형식](https://github.com/kimsojung1121/TIL/blob/master/Ajax/doc/csv_xml_json.md)
+
+---
+
+## Book
+- [210821 ~ / 처음 해보는 Servlet&JSP 웹 프로그래밍](https://github.com/kimsojung1121/TIL/blob/master/Book/Servlet%26JSP.md)
