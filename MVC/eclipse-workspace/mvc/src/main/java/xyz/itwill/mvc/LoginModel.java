@@ -29,9 +29,9 @@ public class LoginModel implements Action {
 			String userid=request.getParameter("userid");
 			String password=request.getParameter("password");
 			
-			//모델 클래스의 요청 처리 메소드는 서비스 클래스의 메소드를 호출하여 요청 처리
+			//모델 클래스의 요청 처리 메소드는 Service 클래스의 메소드를 호출하여 요청 처리
 			//UserinfoService 클래스의 인증 처리 메소드 호출
-			// => 서비스 클래스의 메소드에서 예외가 발생된 경우 인증 실패
+			// => Service 클래스의 메소드에서 예외가 발생된 경우 인증 실패
 			UserinfoService.getService().auth(userid, password);
 			
 			//서비스 클래스의 메소드를 호출하여 예외가 발생되지 않은 경우 인증 성공

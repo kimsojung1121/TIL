@@ -1,6 +1,10 @@
 package xyz.itwill.mvc;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,9 +22,55 @@ import javax.servlet.http.HttpServletResponse;
 public class ControllerServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
+	//요청정보(Key)와 모델 인스턴스(Value)를 저장하기 위한 콜렉션 필드
+	private Map<String, Action> actionMap;
+	
+	//클라이언트 요청에 의해 서블릿 클래스가 인스턴스로 생성된 후 가장 먼저 자동 호출하는 메소드
+	// => 인스턴스 생성 후 한번만 호출 - 초기화 작업
+	@Override
+	public void init() throws ServletException {
+		// TODO Auto-generated method stub
+		//System.out.println("ControllServlet 클래스의 init() 메소드 호출");
+		
+		
+		//콜렉션 필드에 HashMap 인스턴스를 생성하여 저장
+		actionMap=new HashMap<String, Action>();
+		
+		/*
+		//콜렉션 필드에 엔트리(요청정보 - Key, 모델 인스턴스 - Value)를 추가하여 저장
+		actionMap.put("/loginForm.do", new LoginFormModel());
+		actionMap.put("/login.do", new LoginModel());
+		actionMap.put("/logout.do", new LogoutModel());
+		actionMap.put("/writeForm.do", new WriteFormModel());
+		actionMap.put("/write.do", new WriteModel());
+		actionMap.put("/list.do", new ListModel());
+		actionMap.put("/view.do", new ViewModel());
+		actionMap.put("/modifyForm.do", new ModifyFormModel());
+		actionMap.put("/modify.do", new ModifyModel());
+		actionMap.put("/remove.do", new RemoveModel());
+		actionMap.put("/error.do", new ErrorModel());
+		*/
+		
+		//Properties 파일에 요청정보와 모델 클래스를 저장하고 파일의 내용을 읽어 콜렉션
+		//필드의 엔트리로 추가 - 유지보수의 효율성 증가
+		//Properties 파일(XXX.properties) : 프로그램 실행에 필요한 값을 제공하는 텍스트 파일
+		
+		//Properties 파일의 내용을 읽어 저장하기 위한 Properties 인스턴스(Map) 생성
+		Properties properties=new Properties(); //java.util 패키지
+		
+		//Properties 파일의 시스템 경로를 반환받아 저장
+		//String configFilePath=config.getServletContext.getRealPath("/WEB-INF/model.properties");
+		
+		//ServletConfig.getInitParameter(String name) : web.xml 파일에서 servlet 엘리먼트의
+		//init-param 엘리먼트로 제공되는 값을 읽어와 반환하는 메소드
+		String configFile=config.getInitParameter("configFile");
+	}
+	
 	//클라이언트의 요청을 처리하기 위해 자동 호출되는 메소드 
 	// => 클라이언트의 요청이 있을 때마다 반복적으로 호출
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//System.out.println("ControllServlet 클래스의 service() 메소드 호출");
+		
 		//2.클라이언트의 요청 분석 : 요청 URL 주소 이용 - http://localhost:8000/mvc/XXX.do
 		//HttpServletRequest.getRequestURI() : 요청 URL 주소의 URI 주소를 반환하는 메소드
 		String requestURI=request.getRequestURI();
@@ -53,6 +103,7 @@ public class ControllerServlet extends HttpServlet {
 	 	/error.do : ErrorModel 클래스 - 에러메세지 출력페이지
 		*/
 		
+		/*
 		//인터페이스를 사용하여 참조변수 생성
 		// => 참조변수에는 인터페이스를 상속받은 모든 자식클래스의 인스턴스 저장 가능
 		Action action=null;		
@@ -60,9 +111,33 @@ public class ControllerServlet extends HttpServlet {
 			action=new LoginFormModel();
 		} else if(command.equals("/login.do")) {
 			action=new LoginModel();
+		} else if(command.equals("/logout.do")) {
+			action=new LogoutModel();
+		} else if(command.equals("/writeForm.do")) {
+			action=new WriteFormModel();
+		} else if(command.equals("/write.do")) {
+			action=new WriteModel();
+		} else if(command.equals("/list.do")) {
+			action=new ListModel();
+		} else if(command.equals("/view.do")) {
+			action=new ViewModel();
+		} else if(command.equals("/modifyForm.do")) {
+			action=new ModifyFormModel();
+		} else if(command.equals("/modify.do")) {
+			action=new ModifyModel();
+		} else if(command.equals("/remove.do")) {
+			action=new RemoveModel();
 		} else if(command.equals("/error.do")) {
 			action=new ErrorModel();
 		} else {//클라이언트 요청에 대한 Model 클래스가 없는 경우
+			action=new ErrorModel();
+		}
+		*/
+		
+		//콜렉션 필드에 저장된 엔트리에서 요청정보(Key - command)를 전달하여 
+		//모델 인스턴스(Value)를 반환받아 부모 인터페이스의 참조변수에 저장
+		Action action=actionMap.get(command);
+		if(action==null) { //클라이언트 요청에 대한 모델 인스턴스가 없는 경우
 			action=new ErrorModel();
 		}
 		

@@ -78,6 +78,7 @@ public class UserinfoService {
 	}
 	
 	//아이디와 비밀번호를 전달받아 USERINFO 테이블에 저장된 회원정보를 비교하여 인증 처리하는 메소드
+	// => 예외 발생 : 인증 실패, 예외 미발생 : 인증 성공 
 	public void auth(String userid, String password) throws SQLException, UserinfoNotFoundException, PasswordMissMatchException {
 		//아이디에 대한 인증 처리
 		// => 전달된 아이디에 대한 회원정보가 USERINFO 테이블에 없는 경우 인위적 예외 발생 
@@ -92,13 +93,3 @@ public class UserinfoService {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
