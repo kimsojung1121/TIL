@@ -1,10 +1,12 @@
 package xyz.itwill.mvc;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -28,10 +30,8 @@ public class ControllerServlet extends HttpServlet {
 	//클라이언트 요청에 의해 서블릿 클래스가 인스턴스로 생성된 후 가장 먼저 자동 호출하는 메소드
 	// => 인스턴스 생성 후 한번만 호출 - 초기화 작업
 	@Override
-	public void init() throws ServletException {
-		// TODO Auto-generated method stub
-		//System.out.println("ControllServlet 클래스의 init() 메소드 호출");
-		
+	public void init(ServletConfig config) throws ServletException {
+		//System.out.println("ControllerServlet 클래스의 init() 메소드 호출");
 		
 		//콜렉션 필드에 HashMap 인스턴스를 생성하여 저장
 		actionMap=new HashMap<String, Action>();
@@ -51,25 +51,63 @@ public class ControllerServlet extends HttpServlet {
 		actionMap.put("/error.do", new ErrorModel());
 		*/
 		
-		//Properties 파일에 요청정보와 모델 클래스를 저장하고 파일의 내용을 읽어 콜렉션
+		//Properties 파일에 요청정보와 모델 클래스를 저장하고 파일의 내용을 읽어 콜렉션 
 		//필드의 엔트리로 추가 - 유지보수의 효율성 증가
 		//Properties 파일(XXX.properties) : 프로그램 실행에 필요한 값을 제공하는 텍스트 파일
 		
 		//Properties 파일의 내용을 읽어 저장하기 위한 Properties 인스턴스(Map) 생성
-		Properties properties=new Properties(); //java.util 패키지
+		Properties properties=new Properties();
 		
 		//Properties 파일의 시스템 경로를 반환받아 저장
-		//String configFilePath=config.getServletContext.getRealPath("/WEB-INF/model.properties");
+		//String configFilePath=config.getServletContext().getRealPath("/WEB-INF/model.properties");
 		
 		//ServletConfig.getInitParameter(String name) : web.xml 파일에서 servlet 엘리먼트의
-		//init-param 엘리먼트로 제공되는 값을 읽어와 반환하는 메소드
+		//자식 엘리먼트 중 init-param 엘리먼트로 제공되는 값을 얻어와 반환하는 메소드
 		String configFile=config.getInitParameter("configFile");
+		String configFilePath=config.getServletContext().getRealPath(configFile);
+		
+		try {
+			//Properties 파일에 대한 입력스트림 생성하여 저장
+			FileInputStream in=new FileInputStream(configFilePath);
+			
+			//Properties 파일에 저장된 내용으로 Properties 인스턴스의 엔트리로 추가
+			properties.load(in);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		//Properties 인스턴스의 엔트리(요청정보와 모델클래스)를 읽어 콜렉션 필드의 
+		//엔트리(요청정보와 모델 인스턴스)로 추가
+		//Properties.keySet() : Properties 인스턴스에 저장된 모든 키(Key)들을 Set 인스턴스로 반환하는 메소드 
+		for(Object key:properties.keySet()) {//Set 인스턴스의 요소(Key)를 차례대로 제공받아 반복처리 
+			String actionCommand=(String)key;//요청정보 저장
+			
+			//Properties.get(Object key) : Properties 인스턴스의 엔트리 중 키(Key - 요청정보)를 
+			//전달받아 값(Value - 모델클래스)을 반환하는 메소드
+			String actionClass=(String)properties.get(key);//모델클래스 저장
+			
+			try {
+				//모델클래스를 이용하여 모델 인스턴스 생성 - 리플렉션 기능 이용
+				//리플렉션(Reflection) : 프로그램 실행시 클래스를 읽어 인스턴스를 생성하여
+				//인스턴스의 요소(필드 또는 메소드)에 접근 가능하도록 제공하는 기능
+				//Class.forName(String className) : 전달받은 문자열의 클래스를 이용하여
+				//메모리에 저장하는 메소드 - Class 인스턴스(Clazz) 반환
+				//Class.getDeclaredConstructor().newInstance() : 메모리에 저장된 클래스(Clazz)를
+				//이용하여 인스턴스를 생성하여 반환하는 메소드 - Object 타입의 인스턴스 반환
+				Action actionObject=(Action)Class.forName(actionClass).getDeclaredConstructor().newInstance();
+				
+				//콜렉션 필드에 엔트리(Key - 요청정보, Value - 모델 인스턴스) 추가
+				actionMap.put(actionCommand, actionObject);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
 	}
 	
 	//클라이언트의 요청을 처리하기 위해 자동 호출되는 메소드 
 	// => 클라이언트의 요청이 있을 때마다 반복적으로 호출
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//System.out.println("ControllServlet 클래스의 service() 메소드 호출");
+		//System.out.println("ControllerServlet 클래스의 service() 메소드 호출");
 		
 		//2.클라이언트의 요청 분석 : 요청 URL 주소 이용 - http://localhost:8000/mvc/XXX.do
 		//HttpServletRequest.getRequestURI() : 요청 URL 주소의 URI 주소를 반환하는 메소드
@@ -134,10 +172,10 @@ public class ControllerServlet extends HttpServlet {
 		}
 		*/
 		
-		//콜렉션 필드에 저장된 엔트리에서 요청정보(Key - command)를 전달하여 
-		//모델 인스턴스(Value)를 반환받아 부모 인터페이스의 참조변수에 저장
+		//콜렉션 필드에 저장된 엔트리에서 요청정보(Key - command)를 전달하여 모델 인스턴스
+		//(Value)를 반환받아 부모 인턴페이스의 참조변수에 저장 - 가독성 증가
 		Action action=actionMap.get(command);
-		if(action==null) { //클라이언트 요청에 대한 모델 인스턴스가 없는 경우
+		if(action==null) {//클라이언트 요청에 대한 모델 인스턴스가 없는 경우
 			action=new ErrorModel();
 		}
 		
