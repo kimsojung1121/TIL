@@ -18,7 +18,7 @@
 	<p>요청자원 주소 = <%=((HttpServletRequest)pageContext.getRequest()).getRequestURI() %></p>
 	<hr>
 	<h3>EL 사용</h3>
-	<p>컨텍스트 경로 = ${pageContext.request.contextPath }</p>
+	<p>컨텍스트 경로 = ${pageContext.request.ContextPath }</p>
 	<p>요청자원 주소 = ${pageContext.request.requestURI }</p>
 </body>
 </html>

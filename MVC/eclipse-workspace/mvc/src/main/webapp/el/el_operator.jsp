@@ -70,21 +70,3 @@
 	<div>list Empty : ${empty(list) }</div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
