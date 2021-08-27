@@ -21,7 +21,7 @@ public class HelloTag extends TagSupport {
 		//System.out.println("[정보]HelloTag 클래스의 생성자 호출 - 인스턴스 생성");
 	}
 	
-	//JSP 문서에서 커스텀 태그의 시작태그 사용시 자동 호출되는 메소드 - 필수
+	//JSP 문서에서 커스텀 태그의 시작태그 사용시 자동 호출되는 메소드
 	@Override
 	public int doStartTag() throws JspException {
 		//System.out.println("[정보]HelloTag 클래스의 doStartTag() 메소드 호출");
@@ -39,17 +39,17 @@ public class HelloTag extends TagSupport {
 		// => SKIP_BODY : 태그내용을 클라이언트에게 전달하지 않을 경우 사용하는 반환값
 		// => EVAL_BODY_INCLUDE : 태그내용을 클라이언트에게 전달할 사용하는 반환값(기본)
 		// => EVAL_BODY_AGAIN : 태그내용을 클라이언트에게 다시 한번 전달할 경우 사용하는 반환값
-		return super.doStartTag();
+		return SKIP_BODY;
 	}
 	
-	//JSP 문서에서 커스텀 태그의 태그내용 실행후 자동 호출되는 메소드 - 선택
+	//JSP 문서에서 커스텀 태그의 태그내용 실행후 자동 호출되는 메소드
 	@Override
 	public int doAfterBody() throws JspException {
 		//System.out.println("[정보]HelloTag 클래스의 doAfterBody() 메소드 호출");
 		return super.doAfterBody();
 	}
 	
-	//JSP 문서에서 커스텀 태그의 종료태그 사용시 자동 호출되는 메소드 - 선택
+	//JSP 문서에서 커스텀 태그의 종료태그 사용시 자동 호출되는 메소드
 	@Override
 	public int doEndTag() throws JspException {
 		//System.out.println("[정보]HelloTag 클래스의 doEndTag() 메소드 호출");

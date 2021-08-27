@@ -57,12 +57,3 @@
 	<p>student = ${student }</p>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
