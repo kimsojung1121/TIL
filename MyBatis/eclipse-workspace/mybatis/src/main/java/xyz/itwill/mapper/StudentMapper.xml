@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 맵퍼(Mapper) 파일 : SQL 명령을 등록하기 위한 파일  -->
+<!-- => mybatis 환경설정파일(mybatis-config.xml)에 mapper 엘리먼트로 맵퍼 파일 등록 -->
+
+<!-- mapper : SQL 명령을 등록하기 위한 상위 엘리먼트 -->
+<!-- namespace 속성 : 맵퍼 파일을 구분하기 위한 식별자를 속성값으로 설정 -->
+<!-- => 다른 맵퍼 파일에 등록된 SQL 명령과 구분하기 위해 사용 -->
+<!-- => 속성값은 맵퍼 파일을 Java 자료형의 형식으로 표현하여 설정하는 것을 권장 -->
+<!-- => ibatis 프레임워크에서는 namespace 속성이 생략 가능하지만 mybatis 프레임워크에서는 
+namespace 속성이 필수 속성 -->
+<mapper namespace="xyz.itwill.mapper.StudentMapper">
+	<!-- select : SELECT 명령을 등록하기 위한 엘리먼트 -->
+	<!-- id 속성 : SQL 명령이 등록된 엘리먼트를 구분하기 위한 식별자를 속성값으로 설정 -->
+	<!-- resultType 속성 : 등록된 SQL 명령의 실행 결과값을 매핑하여 반환하기 위한 Java 
+	자료형을 속성값으로 설정 -->
+	<!-- => 속성값이 DTO 클래스인 경우 DTO 인스턴스를 생성하여 검색행의 컬럼값이 같은 이름의
+	필드에 자동으로 저장되어 반환 - 자동 매핑 -->
+	<!--  
+	<select id="selectStudentList" resultType="xyz.itwill.dto.Student">
+		select * from student order by no
+	</select>
+	-->
+	
+	<!-- resultType 속성값으로 Java 자료형 대신 typeAlias 엘리먼트에서 설정된 별칭 사용 가능 -->
+	<select id="selectStudentList" resultType="Student">
+		select * from student order by no
+	</select>
+</mapper>
