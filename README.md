@@ -1,8 +1,9 @@
 # Today I Learned
 #### 오늘 배운 것은 오늘 기록하자! ✍🏻
-> 1. 실습 내용 업로드
-> 2. 잘 모르겠는 개념 정리해서 작성
-#### 학원 (~21/10/4)
+
+- 학원 (21/04/22 ~ 21/10/4)
+  - 09/03 중도 하차
+- 21/09/06 취업
 
 
 #### 참고 교재 
@@ -96,7 +97,6 @@
   - [210818 / JSP란?](https://github.com/kimsojung1121/TIL/blob/master/JSP/doc/jsp.md)
 - **[210716 ~ 210811 / 세미 프로젝트](https://github.com/swanstoz/semi-project/blob/master/README.md)**
   - I'MO CAKE 쇼핑몰 웹사이트
-- [210820 ~ / MVC 디자인 패턴]()
 
 ---
 
@@ -109,3 +109,18 @@
 
 ## Book
 - [210821 ~ / 처음 해보는 Servlet&JSP 웹 프로그래밍](https://github.com/kimsojung1121/TIL/blob/master/Book/Servlet%26JSP.md)
+
+---
+
+## MVC 디자인 패턴
+- [210820 ~ / MVC 디자인 패턴](https://github.com/kimsojung1121/TIL/tree/master/MVC/eclipse-workspace/mvc)
+
+---
+
+## MyBatis
+- [ ~ 210903 / MyBatis](https://github.com/kimsojung1121/TIL/tree/master/MyBatis/eclipse-workspace/mybatis)
+
+---
+
+## Spring
+- [210906 ~ / Spring](https://github.com/kimsojung1121/TIL/tree/master/Spring/eclipse-workspace/spring)
