@@ -5,12 +5,6 @@
   - 09/03 중도 하차
 - 21/09/06 취업
 
-
-#### 참고 교재 
-1. [혼자 공부하는 자바](https://www.hanbit.co.kr/store/books/look.php?p_code=B5635758676)
-2. [Do it! 자바스크립트 + 제이쿼리 입문](http://www.easyspub.co.kr/20_Menu/BookView/253/PUB)
-3. [처음 해보는 Servlet&JSP 웹 프로그래밍]()
-
 ---
 
 ## JAVA
@@ -108,19 +102,22 @@
 ---
 
 ## Book
-- [210821 ~ / 처음 해보는 Servlet&JSP 웹 프로그래밍](https://github.com/kimsojung1121/TIL/blob/master/Book/Servlet%26JSP.md)
+- 혼자 공부하는 자바
+- Do it! 자바스크립트 + 제이쿼리 입문
+- [처음 해보는 Servlet&JSP 웹 프로그래밍](https://github.com/kimsojung1121/TIL/blob/master/Book/Servlet%26JSP.md)
+- [All in One Java 애플리케이션 개발]()
 
 ---
 
 ## MVC 디자인 패턴
-- [210820 ~ / MVC 디자인 패턴](https://github.com/kimsojung1121/TIL/tree/master/MVC/eclipse-workspace/mvc)
+- [210820 ~ / MVC 디자인 패턴 실습](https://github.com/kimsojung1121/TIL/tree/master/MVC/eclipse-workspace/mvc)
 
 ---
 
 ## MyBatis
-- [ ~ 210903 / MyBatis](https://github.com/kimsojung1121/TIL/tree/master/MyBatis/eclipse-workspace/mybatis)
+- [ ~ 210903 / MyBatis 실습](https://github.com/kimsojung1121/TIL/tree/master/MyBatis/eclipse-workspace/mybatis)
 
 ---
 
 ## Spring
-- [210906 ~ / Spring](https://github.com/kimsojung1121/TIL/tree/master/Spring/eclipse-workspace/spring)
+- [210906 ~ / Spring ](https://github.com/kimsojung1121/TIL/tree/master/Spring/eclipse-workspace/spring)
