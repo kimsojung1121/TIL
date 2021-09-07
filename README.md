@@ -95,7 +95,7 @@
 - [210712 ~ 210715 / Servlet 실습](https://github.com/swanstoz/TIL/tree/master/Servlet)
 - [210716 ~ / JSP 실습](https://github.com/swanstoz/TIL/tree/master/JSP)
   - [210818 / JSP란?](https://github.com/kimsojung1121/TIL/blob/master/JSP/doc/jsp.md)
-- **[210716 ~ 210811 / 세미 프로젝트](https://github.com/swanstoz/semi-project/blob/master/README.md)**
+- **[210716 ~ 210811 / 세미 프로젝트](https://github.com/kimsojung1121/semi-project)**
   - I'MO CAKE 쇼핑몰 웹사이트
 
 ---
