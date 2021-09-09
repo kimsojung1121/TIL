@@ -87,7 +87,7 @@
 
 ## Servlet & JSP
 - [210712 ~ 210715 / Servlet 실습](https://github.com/swanstoz/TIL/tree/master/Servlet)
-- [210716 ~ / JSP 실습](https://github.com/swanstoz/TIL/tree/master/JSP)
+- [210716 ~ 210805 / JSP 실습](https://github.com/swanstoz/TIL/tree/master/JSP)
   - [210818 / JSP란?](https://github.com/kimsojung1121/TIL/blob/master/JSP/doc/jsp.md)
 - **[210716 ~ 210811 / 세미 프로젝트](https://github.com/kimsojung1121/semi-project)**
   - I'MO CAKE 쇼핑몰 웹사이트
@@ -110,14 +110,15 @@
 ---
 
 ## MVC 디자인 패턴
-- [210820 ~ / MVC 디자인 패턴 실습](https://github.com/kimsojung1121/TIL/tree/master/MVC/eclipse-workspace/mvc)
+- [210820 ~ 210827 / MVC 디자인 패턴 실습](https://github.com/kimsojung1121/TIL/tree/master/MVC/eclipse-workspace/mvc)
 
 ---
 
 ## MyBatis
-- [ ~ 210903 / MyBatis 실습](https://github.com/kimsojung1121/TIL/tree/master/MyBatis/eclipse-workspace/mybatis)
+- [ 210827 ~ 210903 / MyBatis 실습](https://github.com/kimsojung1121/TIL/tree/master/MyBatis/eclipse-workspace/mybatis)
 
 ---
 
 ## Spring
-- [210906 ~ / Spring ](https://github.com/kimsojung1121/TIL/tree/master/Spring/eclipse-workspace/spring)
+- [210906 ~ / Spring 실습](https://github.com/kimsojung1121/TIL/tree/master/Spring/eclipse-workspace/spring)
+- [210909 / 01. Framework 개요 및 개발환경구성](https://github.com/kimsojung1121/TIL/blob/master/Spring/doc/01.md)
