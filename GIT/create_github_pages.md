@@ -19,6 +19,9 @@
 
 ![image](https://user-images.githubusercontent.com/39394592/148649375-5b7203ab-95c8-4d45-8768-46c3db7f7cb3.png)
 
+> Fork 해온 리포지토리는 잔디가 안 심어진다   
+> 잔디 심으려면 리포지토리 새로 만들어야 함   
+> [참고 : [Git] 커밋을 해도 잔디가 안 심어질 때, fork한 repository의 커밋으로도 잔디를 심어보자, 저장소의 커밋 기록까지 전부 복사해오기 !](https://joyful-development.tistory.com/m/12)
 
 ### Visual Studio 2022 연동
 
