@@ -6,130 +6,37 @@
 - 21/09/06 취업
 
 ---
-
-## JAVA
-- JAVA 기본
-  - [210515 / JAVA 시작하기](https://github.com/swanstoz/TIL/blob/master/JAVA/base/210515.md)
-  - [210513 / JAVA 예외처리(Exception)](https://github.com/swanstoz/TIL/blob/master/JAVA/exception/210513.md)
-  - [210514 / JAVA 스레드(Thread)](https://github.com/swanstoz/TIL/blob/master/JAVA/thread/210514.md)
-  - [210521 / JAVA API](https://github.com/swanstoz/TIL/blob/master/JAVA/API/210521.md)
-  - [210517 / JAVA API-java.lang package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/java.lang%20package/210517.md)
-    - Wrapper 클래스, String 클래스, StringBuffer 클래스
-  - [210518 / JAVA API-java.util package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/java.util%20package/doc/210518.md)
-    - Random 클래스
-    - Date 클래스, Calendar 클래스
-    - 자료구조 클래스(Collection 인터페이스)와 제네릭(Generic)
-  - [210520 / JAVA API-java.util package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/java.util%20package/doc/210520.md)
-    - 자료구조 클래스(Map 인터페이스)
-    - 정규표현식
-  - [210521 / JAVA API-java.awt package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/GUI/java.awt%20package/210521.md)
-    - GUI 프로그램 - 디자인
-  - [210522 / 제네릭(Generic)을 쓰는 이유](https://github.com/swanstoz/TIL/blob/master/JAVA/generic.md)
-  - [210523 / JAVA API-java.awt.event package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/GUI/java.awt.event%20package/doc/210523.md)
-    - GUI 프로그램 - 이벤트 처리
-  - [210524 / JAVA API-java.awt.event package](https://github.com/swanstoz/TIL/blob/master/JAVA/API/GUI/java.awt.event%20package/doc/210524.md)
-  - [210526 / JAVA API-javax.swing](https://github.com/swanstoz/TIL/blob/master/JAVA/API/GUI/javax.swing%20package/210526.md)
-  - [210527 / JAVA API-java.io](https://github.com/swanstoz/TIL/blob/master/JAVA/API/java.io%20package/doc/210527.md)
-  - [210528 / JAVA API-java.io](https://github.com/swanstoz/TIL/blob/master/JAVA/API/java.io%20package/doc/210528.md)
-    - 회원정보 입출력 프로그램, 메모장 프로그램
-  - [210531 / JAVA API-java.net](https://github.com/swanstoz/TIL/blob/master/JAVA/API/java.net%20package/210531.md)
-
----
-
-## GIT
-- [210514 / Git Commit Message 바꾸기](https://github.com/swanstoz/TIL/blob/master/GIT/changeCommitMessage.md)
-- [210518 / Git Commit 합치기 - squash](https://github.com/swanstoz/TIL/blob/master/GIT/gitSquash.md)
-- [210530 / Git Repository Clone](https://github.com/swanstoz/TIL/blob/master/GIT/gitClone.md)
-
----
-
-## DATABASE
-- [210604 / Database 소개](https://github.com/swanstoz/TIL/blob/master/Database/01.Database.md)
-- [210604 / 관계형 데이터베이스 개념](https://github.com/swanstoz/TIL/blob/master/Database/02.Realational%20DBMS.md)
-
-- SQL
-  - [210602 / SQL Developer 1일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/1%EC%9D%BC%EC%B0%A8.sql)
-  - [210603 / SQL Developer 2일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/2%EC%9D%BC%EC%B0%A8.sql)
-    - 단일함수와 그룹함수 
-  - [210604 / SQL Developer 3일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/3%EC%9D%BC%EC%B0%A8.sql)
-    - 분석함수와 JOIN
-  - [210607 / SQL Developer 4일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/4%EC%9D%BC%EC%B0%A8.sql)
-  - [210608 / SQL Developer 5일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/5%EC%9D%BC%EC%B0%A8.sql)
-  - [210609 / SQL Developer 6일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/6%EC%9D%BC%EC%B0%A8.sql)
-  - [210610 / SQL Developer 7일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/7%EC%9D%BC%EC%B0%A8.sql)
-  - [210611 / SQL Developer 8일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/8%EC%9D%BC%EC%B0%A8.sql)
-  - [210614 / SQL Developer 9일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/9%EC%9D%BC%EC%B0%A8.sql)
-- 프로그래머스 SQL 고득점 Kit
-  - [211230 / SELECT](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/programmers_select.md) 
-  - [211230 / SUM,MAX,MIN](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/programmers_sum%2Bmax%2Bmin.md) 
-  - [211230 / GROUP BY](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/programmers_group%2Bby.md) 
----
-
-## JDBC
-- [210615 / JDBC 프로그램 작성법](https://github.com/swanstoz/TIL/blob/master/JDBC/doc/210615.md)
+## 프로젝트
 - **[~ 210622 / JDBC 개인 프로젝트](https://github.com/swanstoz/gui-project/blob/master/README.md)**
   - 점포별 직원 관리 JDBC 
-
----
-
-- [Web Application을 위한 환경설정](https://github.com/kimsojung1121/TIL/blob/master/doc/WebApplication.md)
-- [210818 / WAS란?](https://github.com/kimsojung1121/TIL/blob/master/doc/WAS.md)
-
-## HTML5 & CSS3
-- [210623 ~ 210624 / HTML5 실습](https://github.com/swanstoz/TIL/tree/master/HTML5/src)
-- [210625 ~ 210628 / CSS3 실습](https://github.com/swanstoz/TIL/tree/master/CSS3/src)
-
----
-
-## JavaScript & jQuery
-- [Tern 플러그인 설치](https://github.com/swanstoz/TIL/blob/master/JavaScript/doc/PlugIn_tern.md)
-- [210630 ~ 210706 / JavaScript 실습](https://github.com/swanstoz/TIL/tree/master/JavaScript/src)
-- [210706 ~ 210709 / jQuery 실습](https://github.com/swanstoz/TIL/tree/master/jQuery/src)
-
----
-
-## Servlet & JSP
-- [210712 ~ 210715 / Servlet 실습](https://github.com/swanstoz/TIL/tree/master/Servlet)
-- [210716 ~ 210805 / JSP 실습](https://github.com/swanstoz/TIL/tree/master/JSP)
-  - [210818 / JSP란?](https://github.com/kimsojung1121/TIL/blob/master/JSP/doc/jsp.md)
 - **[210716 ~ 210811 / 세미 프로젝트](https://github.com/kimsojung1121/semi-project)**
   - I'MO CAKE 쇼핑몰 웹사이트
-
 ---
 
-## Ajax
-- [210817 ~ 210820 / Ajax 실습](https://github.com/kimsojung1121/TIL/tree/master/Ajax/eclipse-workspace/ajax/src/main/webapp)
-  - [210818 / Ajax란?](https://github.com/kimsojung1121/TIL/blob/master/Ajax/doc/ajax.md)
-  - [210818 / 데이터 전송 형식](https://github.com/kimsojung1121/TIL/blob/master/Ajax/doc/csv_xml_json.md)
+## [JAVA](https://github.com/kimsojung1121/TIL/tree/master/JAVA/README.md)
 
----
+## [JSP](https://github.com/kimsojung1121/TIL/tree/master/JSP)
 
-## Book
-- 혼자 공부하는 자바
-- Do it! 자바스크립트 + 제이쿼리 입문
-- [처음 해보는 Servlet&JSP 웹 프로그래밍](https://github.com/kimsojung1121/TIL/blob/master/Book/Servlet%26JSP.md)
-- [All in One Java 애플리케이션 개발](https://github.com/kimsojung1121/TIL/tree/master/Book/All-in-One-JAVA)
-- [파이썬 웹 프로그래밍](https://github.com/kimsojung1121/TIL/tree/master/Book/python-web-programing)
+## [JDBC](https://github.com/kimsojung1121/TIL/tree/master/JDBC/README.md)
 
+## [Servlet](https://github.com/kimsojung1121/TIL/tree/master/Servlet)
 
----
+## [Spring](https://github.com/kimsojung1121/TIL/blob/master/Spring/README.md)
 
-## MVC 디자인 패턴
-- [210820 ~ 210827 / MVC 디자인 패턴 실습](https://github.com/kimsojung1121/TIL/tree/master/MVC/eclipse-workspace/mvc)
+## [HTML5](https://github.com/kimsojung1121/TIL/tree/master/HTML5/README.md)
 
----
+## [CSS3](https://github.com/kimsojung1121/TIL/tree/master/CSS3/README.md)
 
-## MyBatis
-- [ 210827 ~ 210903 / MyBatis 실습](https://github.com/kimsojung1121/TIL/tree/master/MyBatis/eclipse-workspace/mybatis)
+## [JavaScript & jQuery](https://github.com/kimsojung1121/TIL/blob/master/JavaScript/README.md)
 
----
+## [Ajax](https://github.com/kimsojung1121/TIL/blob/master/Ajax/README.md)
 
-## Spring
-- [210906 ~ / Spring 실습](https://github.com/kimsojung1121/TIL/tree/master/Spring/eclipse-workspace/spring)
-  - [210909 / 01. Framework 개요 및 개발환경구성](https://github.com/kimsojung1121/TIL/blob/master/Spring/doc/01.md)
-- [220107 / Spring 기본 개념 정리](https://github.com/kimsojung1121/TIL/blob/master/Spring/doc/220107.md)
+## [DATABASE](https://github.com/kimsojung1121/TIL/tree/master/Database/README.md)
 
----
+## [MyBatis](https://github.com/kimsojung1121/TIL/blob/master/MyBatis/README.md)
 
-## Etc...
-- [220107 / eclipse Tomcat 연동](https://github.com/kimsojung1121/TIL/blob/master/JAVA/220107-eclipse%2Btomcat%2B%EC%97%B0%EB%8F%99.md)
+## [MVC 디자인 패턴](https://github.com/kimsojung1121/TIL/blob/master/MVC/README.md)
+
+## [GIT](https://github.com/kimsojung1121/TIL/tree/master/GIT/README.md)
+
+## [Book](https://github.com/kimsojung1121/TIL/blob/master/Book/README.md)
