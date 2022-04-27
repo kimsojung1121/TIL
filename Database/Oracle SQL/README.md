@@ -1,20 +1,20 @@
 ## Oracle SQL
 
 ### 학원 sql 실습
-- [1일차](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/1%EC%9D%BC%EC%B0%A8.sql)
-- [2일차](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/2%EC%9D%BC%EC%B0%A8.sql)
+  - [210602 / SQL Developer 1일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/1%EC%9D%BC%EC%B0%A8.sql)
+  - [210603 / SQL Developer 2일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/2%EC%9D%BC%EC%B0%A8.sql)
     - 단일함수와 그룹함수 
-- [3일차](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/3%EC%9D%BC%EC%B0%A8.sql)
+  - [210604 / SQL Developer 3일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/3%EC%9D%BC%EC%B0%A8.sql)
     - 분석함수와 JOIN
-- [4일차](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/4%EC%9D%BC%EC%B0%A8.sql)
-- [5일차](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/5%EC%9D%BC%EC%B0%A8.sql)
-- [6일차](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/6%EC%9D%BC%EC%B0%A8.sql)
-- [7일차](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/7%EC%9D%BC%EC%B0%A8.sql)
-- [8일차](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/8%EC%9D%BC%EC%B0%A8.sql)
-- [9일차](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/9%EC%9D%BC%EC%B0%A8.sql)
+  - [210607 / SQL Developer 4일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/4%EC%9D%BC%EC%B0%A8.sql)
+  - [210608 / SQL Developer 5일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/5%EC%9D%BC%EC%B0%A8.sql)
+  - [210609 / SQL Developer 6일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/6%EC%9D%BC%EC%B0%A8.sql)
+  - [210610 / SQL Developer 7일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/7%EC%9D%BC%EC%B0%A8.sql)
+  - [210611 / SQL Developer 8일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/8%EC%9D%BC%EC%B0%A8.sql)
+  - [210614 / SQL Developer 9일차 실습](https://github.com/swanstoz/TIL/blob/master/Database/Oracle%20SQL/9%EC%9D%BC%EC%B0%A8.sql)
 
 
-### 프로그래머스 실습
+### 프로그래머스 SQL 고득점 Kit
 - [GROUP BY](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/programmers_group%2Bby.md)
 - [SELECT](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/programmers_select.md)
 - [SUM,MAX,MIN](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/programmers_sum%2Bmax%2Bmin.md)
