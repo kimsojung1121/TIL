@@ -3,7 +3,9 @@
 ### 학원 sql 실습
 - [1일차](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/1%EC%9D%BC%EC%B0%A8.sql)
 - [2일차](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/2%EC%9D%BC%EC%B0%A8.sql)
+    - 단일함수와 그룹함수 
 - [3일차](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/3%EC%9D%BC%EC%B0%A8.sql)
+    - 분석함수와 JOIN
 - [4일차](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/4%EC%9D%BC%EC%B0%A8.sql)
 - [5일차](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/5%EC%9D%BC%EC%B0%A8.sql)
 - [6일차](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/6%EC%9D%BC%EC%B0%A8.sql)
