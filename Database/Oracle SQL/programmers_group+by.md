@@ -39,3 +39,8 @@ ORDER BY HOUR;
 ```
 
 **시간대별로 출력 안 됨**
+=> 틀 만들어서 짜보기
+```
+SELECT ROWNUM+8 FROM DUAL
+CONNECT BY LEVEL <= 11
+```
