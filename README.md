@@ -9,7 +9,7 @@
 ## 프로젝트
 - **[~ 210622 / JDBC 개인 프로젝트](https://github.com/swanstoz/gui-project/blob/master/README.md)**
   - 점포별 직원 관리 JDBC 
-- **[210716 ~ 210811 / 세미 프로젝트](https://github.com/kimsojung1121/semi-project)**
+- **[210716 ~ 210811 / 세미 프로젝트](https://github.com/kimsojung1121/semi-project/blob/master/README.md)**
   - I'MO CAKE 쇼핑몰 웹사이트
 ---
 
