@@ -35,7 +35,7 @@ trailing nullcols
 
 #### 4. `cmd` - 파일 저장된 경로로 이동
 ```cmd
-sqlldr userid=[아이디명]/[비밀번호]@[호스트이름] control='C:\export.ctl'     log='C:\export.log'     bad='C:\export.bad'
+sqlldr userid=[아이디명]/[비밀번호]@[IP주소] control='C:\export.ctl'     log='C:\export.log'     bad='C:\export.bad'
 ```
 - 데이터가 제대로 들어가면 `export.log` 파일이 생성되고, 실패하면 `export.bad` 파일이 생성된다.
 
