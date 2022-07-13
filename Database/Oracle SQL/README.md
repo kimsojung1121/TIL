@@ -27,4 +27,6 @@
 - [집계함수, 분석함수](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/%EC%A7%91%EA%B3%84%ED%95%A8%EC%88%98%2C%20%EB%B6%84%EC%84%9D%ED%95%A8%EC%88%98.md)
 - [sql loader 사용방법](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/SQL+Loader.md)
 - [계층형 쿼리](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/%EA%B3%84%EC%B8%B5%ED%98%95%EC%BF%BC%EB%A6%AC.md)
+- [함수와 프로시저의 차이](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/%ED%95%A8%EC%88%98%EC%99%80%20%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80.md)
+
 
