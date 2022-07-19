@@ -28,5 +28,5 @@
 - [sql loader 사용방법](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/SQL+Loader.md)
 - [계층형 쿼리](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/%EA%B3%84%EC%B8%B5%ED%98%95%EC%BF%BC%EB%A6%AC.md)
 - [함수와 프로시저의 차이](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/%ED%95%A8%EC%88%98%EC%99%80%20%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80.md)
-
+- [오라클 MERGE문](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/merge%20into.md)
 
