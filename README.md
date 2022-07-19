@@ -40,3 +40,5 @@
 ## [GIT](https://github.com/kimsojung1121/TIL/tree/master/GIT/README.md)
 
 ## [Book](https://github.com/kimsojung1121/TIL/blob/master/Book/README.md)
+
+## [Etc](https://github.com/kimsojung1121/TIL/blob/master/Etc/README.md)
