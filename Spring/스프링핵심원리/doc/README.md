@@ -14,3 +14,5 @@
 - [220712 / AppConfig 리펙터링, 새로운 구조와 할인 정책 적용, **전체 흐름 정리**](https://github.com/kimsojung1121/TIL/blob/master/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%ED%95%B5%EC%8B%AC%EC%9B%90%EB%A6%AC/doc/220712.md)
 - [220713 / IoC, DI, 그리고 컨테이너](https://github.com/kimsojung1121/TIL/blob/master/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%ED%95%B5%EC%8B%AC%EC%9B%90%EB%A6%AC/doc/220713.md)
 ---
+- [220716 / 컨테이너에 등록된 모든 빈 조회](https://github.com/kimsojung1121/TIL/blob/master/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%ED%95%B5%EC%8B%AC%EC%9B%90%EB%A6%AC/doc/220716.md)
+- [220719 / 스프링 빈 조회 - 기본, 동일한 타입 둘 이상, 상속](https://github.com/kimsojung1121/TIL/blob/master/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%ED%95%B5%EC%8B%AC%EC%9B%90%EB%A6%AC/doc/220719.md)
