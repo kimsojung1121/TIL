@@ -16,3 +16,4 @@
 ---
 - [220716 / 컨테이너에 등록된 모든 빈 조회](https://github.com/kimsojung1121/TIL/blob/master/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%ED%95%B5%EC%8B%AC%EC%9B%90%EB%A6%AC/doc/220716.md)
 - [220719 / 스프링 빈 조회 - 기본, 동일한 타입 둘 이상, 상속](https://github.com/kimsojung1121/TIL/blob/master/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%ED%95%B5%EC%8B%AC%EC%9B%90%EB%A6%AC/doc/220719.md)
+- [220725 / BeanFactory와 ApplicationContext, 다양한 설정 형식 지원 - xml 1/2](https://github.com/kimsojung1121/TIL/blob/master/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%ED%95%B5%EC%8B%AC%EC%9B%90%EB%A6%AC/doc/220725.md)
