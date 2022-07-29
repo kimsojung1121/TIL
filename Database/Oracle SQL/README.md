@@ -30,3 +30,4 @@
 - [함수와 프로시저의 차이](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/%ED%95%A8%EC%88%98%EC%99%80%20%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80.md)
 - [오라클 MERGE문](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/merge%20into.md)
 - [오라클 LAG(), LEAD()](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/LAG()%2C%20LEAD().md)
+- [DB 채번 시 ROW_NUMBER() 활용법과 ROWNUM 키워드와의 차이](https://github.com/kimsojung1121/TIL/blob/master/Database/Oracle%20SQL/%EC%B1%84%EB%B2%88.md)
