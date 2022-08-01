@@ -18,3 +18,4 @@
 - [220719 / 스프링 빈 조회 - 기본, 동일한 타입 둘 이상, 상속](https://github.com/kimsojung1121/TIL/blob/master/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%ED%95%B5%EC%8B%AC%EC%9B%90%EB%A6%AC/doc/220719.md)
 - [220725 / BeanFactory와 ApplicationContext, 다양한 설정 형식 지원 - xml 1/2](https://github.com/kimsojung1121/TIL/blob/master/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%ED%95%B5%EC%8B%AC%EC%9B%90%EB%A6%AC/doc/220725.md)
 - [220730 / 다양한 설정 형식 지원 - xml 2/2, 스프링 빈 설정 메타 정보 - BeanDefinition 1/2](https://github.com/kimsojung1121/TIL/blob/master/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%ED%95%B5%EC%8B%AC%EC%9B%90%EB%A6%AC/doc/220730.md)
+- [220801 / 스프링 빈 설정 메타 정보 - BeanDefinition 2/2, 웹 애플리케이션과 싱글톤, 싱글톤 패턴](https://github.com/kimsojung1121/TIL/blob/master/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%ED%95%B5%EC%8B%AC%EC%9B%90%EB%A6%AC/doc/220801.md)
